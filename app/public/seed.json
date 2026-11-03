@@ -1,0 +1,4164 @@
+{
+  "generated": "2026-11-03",
+  "notes": "Titles, order, versions, regions and characters from Game8 (see source_url). Synopses and summaries are original Cranellz text in English (en) and Indonesian (id). Indonesian titles are fan translations; the game has no official Indonesian localisation. original_title is left null for editors to fill from the Chinese/Japanese client. needs_review marks entries whose version or details were inferred and should be checked in-game.",
+  "site_settings": {
+    "brand_latin": "CRANELLZ",
+    "brand_cjk": null,
+    "top_right_label": {
+      "en": "ARCHIVE 1.0〜{latest}",
+      "id": "ARSIP 1.0〜{latest}"
+    },
+    "back_link_url": null,
+    "social_links": [],
+    "disclaimer": {
+      "en": "Unofficial fan archive. Wuthering Waves and all related names, art and story are © Kuro Games. Cranellz is not affiliated with Kuro Games.",
+      "id": "Arsip penggemar tidak resmi. Wuthering Waves beserta nama, karya seni, dan ceritanya © Kuro Games. Cranellz tidak berafiliasi dengan Kuro Games."
+    },
+    "default_story_slug": "simulacrum-of-the-heart",
+    "default_locale": "en",
+    "locales": [
+      "en",
+      "id"
+    ]
+  },
+  "categories": [
+    {
+      "code": "MAIN",
+      "name": {
+        "en": "Main Story",
+        "id": "Cerita Utama"
+      },
+      "name_jp": "メインストーリー",
+      "sort": 1
+    },
+    {
+      "code": "SEGUE",
+      "name": {
+        "en": "Segue",
+        "id": "Selingan"
+      },
+      "name_jp": "間奏",
+      "sort": 2
+    },
+    {
+      "code": "TALE",
+      "name": {
+        "en": "Tales",
+        "id": "Kisah"
+      },
+      "name_jp": "物語",
+      "sort": 3
+    },
+    {
+      "code": "COMP",
+      "name": {
+        "en": "Companion Story",
+        "id": "Kisah Pendamping"
+      },
+      "name_jp": "コンパニオン",
+      "sort": 4
+    },
+    {
+      "code": "SIDE",
+      "name": {
+        "en": "Side Quest",
+        "id": "Misi Sampingan"
+      },
+      "name_jp": "サイド",
+      "sort": 5
+    },
+    {
+      "code": "EXPL",
+      "name": {
+        "en": "Exploration Quest",
+        "id": "Misi Eksplorasi"
+      },
+      "name_jp": "探索",
+      "sort": 6
+    },
+    {
+      "code": "EVNT",
+      "name": {
+        "en": "Event Story",
+        "id": "Cerita Event"
+      },
+      "name_jp": "イベント",
+      "sort": 7
+    }
+  ],
+  "version_groups": [
+    {
+      "label": "1.X",
+      "sort": 1
+    },
+    {
+      "label": "2.X",
+      "sort": 2
+    },
+    {
+      "label": "3.X",
+      "sort": 3
+    }
+  ],
+  "versions": [
+    {
+      "version": "1.0",
+      "name": "Waking of a World",
+      "release_date": "2024-05-23"
+    },
+    {
+      "version": "1.1",
+      "name": "Thaw of Eons",
+      "release_date": "2024-06-28"
+    },
+    {
+      "version": "1.2",
+      "name": "In the Turquoise Moonglow",
+      "release_date": "2024-08-15"
+    },
+    {
+      "version": "1.3",
+      "name": "To the Shore's End",
+      "release_date": "2024-09-29"
+    },
+    {
+      "version": "1.4",
+      "name": "When the Night Knocks",
+      "release_date": "2024-11-14"
+    },
+    {
+      "version": "2.0",
+      "name": "All Silent Souls Can Sing",
+      "release_date": "2025-01-02"
+    },
+    {
+      "version": "2.1",
+      "name": "Waves Sing, and the Cerulean Bird Calls",
+      "release_date": "2025-02-13"
+    },
+    {
+      "version": "2.2",
+      "name": "Tangled Truths in the Inverted Tower",
+      "release_date": "2025-03-27"
+    },
+    {
+      "version": "2.3",
+      "name": "Fiery Arpeggio of Summer Reunion",
+      "release_date": "2025-04-29"
+    },
+    {
+      "version": "2.4",
+      "name": "Lightly We Toss the Crown",
+      "release_date": "2025-06-12"
+    },
+    {
+      "version": "2.5",
+      "name": "Unfading Melody of Life",
+      "release_date": "2025-07-24"
+    },
+    {
+      "version": "2.6",
+      "name": "By Sun's Scourge, By Moon's Revelation",
+      "release_date": "2025-08-28"
+    },
+    {
+      "version": "2.7",
+      "name": "Dawn Breaks on Dark Tides",
+      "release_date": "2025-10-09"
+    },
+    {
+      "version": "2.8",
+      "name": "To the City Set in Amber",
+      "release_date": "2025-11-20"
+    },
+    {
+      "version": "3.0",
+      "name": "We Who See the Stars",
+      "release_date": "2025-12-25"
+    },
+    {
+      "version": "3.1",
+      "name": "For You Who Walk in Snow",
+      "release_date": "2026-02-05"
+    },
+    {
+      "version": "3.2",
+      "name": "Resolution to Illuminate the Shadows",
+      "release_date": "2026-03-19"
+    },
+    {
+      "version": "3.3",
+      "name": "Reverbs From the End of Galaxies",
+      "release_date": "2026-04-30"
+    },
+    {
+      "version": "3.4",
+      "name": "The Dream Not Dreamed",
+      "release_date": "2026-06-08"
+    },
+    {
+      "version": "3.5",
+      "name": "Blade of Past Resounds, Lingering Dream Hymns",
+      "release_date": "2026-07-10"
+    },
+    {
+      "version": "3.6",
+      "name": "Lamplight in Mirage, Sword's Resolve in Heart",
+      "release_date": "2026-08-20"
+    },
+    {
+      "version": "3.7",
+      "name": "Prism's Illusion, Heart's Illumination",
+      "release_date": "2026-09-30"
+    }
+  ],
+  "stories": [
+    {
+      "slug": "utterance-of-marvels-i",
+      "category": "MAIN",
+      "chapter_label": "PROLOGUE · ACT I",
+      "title": {
+        "en": "Utterance of Marvels: I",
+        "id": "Ucapan Keajaiban: I"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [
+        "Rover",
+        "Yangyang",
+        "Chixia"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "The Rover wakes with no memory in a strange world, and a sudden battle reveals the power to absorb Echoes.",
+        "id": "Sang Rover terbangun tanpa ingatan di dunia yang asing, dan sebuah pertarungan mendadak menyingkap kekuatan untuk menyerap Echo."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Strangers who seem to know the Rover greet them in a hazy wilderness. When a powerful enemy appears, the Rover discovers they can absorb the Echoes of defeated Tacet Discords, a gift that sets the whole journey in motion."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Orang-orang asing yang seolah mengenal sang Rover menyambutnya di alam liar yang berkabut. Saat musuh kuat muncul, Rover mendapati dirinya mampu menyerap Echo dari Tacet Discord yang dikalahkan, anugerah yang memulai seluruh perjalanan."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 100,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/454537"
+    },
+    {
+      "slug": "utterance-of-marvels-ii",
+      "category": "MAIN",
+      "chapter_label": "PROLOGUE · ACT II",
+      "title": {
+        "en": "Utterance of Marvels: II",
+        "id": "Ucapan Keajaiban: II"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [
+        "Rover",
+        "Yangyang",
+        "Chixia"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Leaving the Gorges of Spirits, the Rover learns to use Echoes and heads for Jinzhou, the heart of Huanglong.",
+        "id": "Meninggalkan Gorges of Spirits, Rover belajar menggunakan Echo dan menuju Jinzhou, jantung Huanglong."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Rover absorbs their first Echo from a fallen Tacet Discord and grows stronger with each fight. The road ends at the gates of Jinzhou, the bright capital of Huanglong."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rover menyerap Echo pertamanya dari Tacet Discord yang tumbang dan bertambah kuat di setiap pertarungan. Perjalanan berakhir di gerbang Jinzhou, ibu kota Huanglong yang gemerlap."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 200,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/454703"
+    },
+    {
+      "slug": "first-resonance",
+      "category": "MAIN",
+      "chapter_label": "CH. I · ACT I",
+      "title": {
+        "en": "First Resonance",
+        "id": "Resonansi Pertama"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Jinzhou",
+      "characters": [
+        "Rover",
+        "Sanhua",
+        "Jinhsi"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Invited by Jinzhou's Magistrate, the Rover instead finds a trail of tokens hinting at where she has gone.",
+        "id": "Diundang oleh Magistrat Jinzhou, Rover justru menemukan jejak tanda yang mengisyaratkan ke mana ia pergi."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Rover arrives in Jinzhou expecting an audience with the Magistrate, but she is absent. In her place are tokens and riddles, the first steps of a search across Huanglong."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rover tiba di Jinzhou dan berharap bertemu sang Magistrat, tetapi ia tidak ada. Sebagai gantinya ada tanda dan teka-teki, langkah pertama sebuah pencarian di seluruh Huanglong."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 300,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/454733"
+    },
+    {
+      "slug": "echoing-marche",
+      "category": "MAIN",
+      "chapter_label": "CH. I · ACT II",
+      "title": {
+        "en": "Echoing Marche",
+        "id": "Mars yang Bergema"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [
+        "Rover",
+        "Jiyan"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "The Magistrate's trail leads to the front line of Huanglong's war against the Tacet Discords.",
+        "id": "Jejak sang Magistrat mengarah ke garis depan perang Huanglong melawan Tacet Discord."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Following the second token, the Rover reaches a region gripped by fear of the Tacet Discords. There a general leads the defence from the front, and the Rover joins the fight."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Mengikuti tanda kedua, Rover tiba di wilayah yang dicekam ketakutan akan Tacet Discord. Di sana seorang jenderal memimpin pertahanan dari garis depan, dan Rover ikut bertempur."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 400,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/454745"
+    },
+    {
+      "slug": "ominous-star",
+      "category": "MAIN",
+      "chapter_label": "CH. I · ACT III",
+      "title": {
+        "en": "Ominous Star",
+        "id": "Bintang Pertanda Buruk"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Qichi Village",
+      "characters": [
+        "Rover",
+        "Scar"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Clues lead to the ruined Qichi Village, where the one who destroyed it is waiting.",
+        "id": "Petunjuk membawa Rover ke reruntuhan Desa Qichi, tempat sang penghancurnya menunggu."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The next clue points to Qichi Village, a place emptied by tragedy. Among the ruins the Rover meets the figure responsible for its fall."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Petunjuk berikutnya mengarah ke Desa Qichi, tempat yang dikosongkan oleh tragedi. Di antara reruntuhan, Rover bertemu sosok yang bertanggung jawab atas kehancurannya."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 500,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/455004"
+    },
+    {
+      "slug": "clashing-blades",
+      "category": "MAIN",
+      "chapter_label": "CH. I · ACT IV",
+      "title": {
+        "en": "Clashing Blades",
+        "id": "Benturan Pedang"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Jinzhou",
+      "characters": [
+        "Rover",
+        "Jinhsi",
+        "Scar"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "In Jinzhou's hidden Grand Library the Rover finally meets the Magistrate, as an old enemy walks into a trap.",
+        "id": "Di Perpustakaan Agung Jinzhou yang tersembunyi, Rover akhirnya bertemu sang Magistrat, saat musuh lama masuk ke dalam perangkap."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "With every token solved, the Rover is led into the Grand Library for the long-awaited meeting. Just as answers come close, a familiar foe returns and the Magistrate's plan to seal him away springs shut."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah semua tanda terpecahkan, Rover dibawa ke Perpustakaan Agung untuk pertemuan yang lama dinanti. Tepat saat jawaban mendekat, musuh lama kembali dan rencana sang Magistrat untuk menyegelnya pun dijalankan."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 600,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/455883"
+    },
+    {
+      "slug": "rewinding-raindrops",
+      "category": "MAIN",
+      "chapter_label": "CH. I · ACT V",
+      "title": {
+        "en": "Rewinding Raindrops",
+        "id": "Tetes Hujan yang Berbalik"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [
+        "Rover",
+        "Jinhsi",
+        "Yangyang"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Rain falls upward as a Threnodian stirs, and the Rover sets out to find the elusive Black Shores.",
+        "id": "Hujan jatuh ke atas saat seekor Threnodian bergerak, dan Rover berangkat mencari Black Shores yang misterius."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A message from the Sentinel sends the Rover looking for the Black Shores. Meanwhile Retrograde Rain climbs into the sky, a sign that a Threnodian is waking and that a catastrophe may follow."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Pesan dari sang Sentinel membuat Rover mencari Black Shores. Sementara itu Hujan Retrograd naik ke langit, tanda bahwa seekor Threnodian terbangun dan bencana bisa menyusul."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 700,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/456178"
+    },
+    {
+      "slug": "grand-warstorm",
+      "category": "MAIN",
+      "chapter_label": "CH. I · ACT VI",
+      "title": {
+        "en": "Grand Warstorm",
+        "id": "Badai Perang Besar"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [
+        "Rover",
+        "Jinhsi",
+        "Jiyan"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Huanglong goes to war against a flood of Tacet Discords as the Rover faces the Threnodian, the Dreamless.",
+        "id": "Huanglong berperang melawan gelombang Tacet Discord saat Rover menghadapi sang Threnodian, Dreamless."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Tacet Discords pour across Huanglong and the nation commits everything to its defence. At the centre of the storm the Rover confronts the Dreamless to stop the threat to the whole nation."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Tacet Discord membanjiri Huanglong dan bangsa itu mengerahkan segalanya untuk bertahan. Di pusat badai, Rover menghadapi Dreamless untuk menghentikan ancaman bagi seluruh negeri."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 800,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/456226"
+    },
+    {
+      "slug": "solitary-path",
+      "category": "COMP",
+      "chapter_label": "COMPANION · YINLIN",
+      "title": {
+        "en": "Solitary Path",
+        "id": "Jalan Sunyi"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Jinzhou",
+      "characters": [
+        "Yinlin",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Yinlin's companion story, set in Jinzhou.",
+        "id": "Kisah pendamping Yinlin, berlatar di Jinzhou."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Yinlin away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Yinlin di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 900,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/456288"
+    },
+    {
+      "slug": "boat-race-in-river",
+      "category": "COMP",
+      "chapter_label": "COMPANION · JIYAN",
+      "title": {
+        "en": "Boat Race in River",
+        "id": "Lomba Perahu di Sungai"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Jinzhou",
+      "characters": [
+        "Jiyan",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Jiyan's companion story, set in Jinzhou.",
+        "id": "Kisah pendamping Jiyan, berlatar di Jinzhou."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Jiyan away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Jiyan di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1000,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/456603"
+    },
+    {
+      "slug": "replica-of-past-days",
+      "category": "COMP",
+      "chapter_label": "COMPANION · JIYAN",
+      "title": {
+        "en": "Replica of Past Days",
+        "id": "Replika Hari-Hari Lalu"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [
+        "Jiyan",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Jiyan's companion story, set in Huanglong.",
+        "id": "Kisah pendamping Jiyan, berlatar di Huanglong."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Jiyan away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Jiyan di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1100,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/456615"
+    },
+    {
+      "slug": "pastures-like-old-times",
+      "category": "COMP",
+      "chapter_label": "COMPANION · JIYAN",
+      "title": {
+        "en": "Pastures Like Old Times",
+        "id": "Padang Rumput Seperti Dulu"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Jinzhou",
+      "characters": [
+        "Jiyan",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Jiyan's companion story, set in Jinzhou.",
+        "id": "Kisah pendamping Jiyan, berlatar di Jinzhou."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Jiyan away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Jiyan di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1200,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/456632"
+    },
+    {
+      "slug": "wild-heart-s-return",
+      "category": "COMP",
+      "chapter_label": "COMPANION · LINGYANG",
+      "title": {
+        "en": "Wild Heart's Return",
+        "id": "Kembalinya Hati yang Liar"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Jinzhou",
+      "characters": [
+        "Lingyang",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": "Lingyang's companion story, set in Jinzhou.",
+        "id": "Kisah pendamping Lingyang, berlatar di Jinzhou."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Lingyang away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Lingyang di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1300,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/455856"
+    },
+    {
+      "slug": "stygian-lacrimosa",
+      "category": "EXPL",
+      "chapter_label": null,
+      "title": {
+        "en": "Stygian Lacrimosa",
+        "id": "Lacrimosa Stygian"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": null,
+        "id": null
+      },
+      "body": {
+        "en": null,
+        "id": null
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1400,
+      "status": "draft",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/456861"
+    },
+    {
+      "slug": "tales-of-the-past-and-present-central-plains",
+      "category": "SIDE",
+      "chapter_label": null,
+      "title": {
+        "en": "Tales of the Past and Present: Central Plains",
+        "id": "Kisah Masa Lalu dan Kini: Dataran Tengah"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.0",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [],
+      "est_minutes": null,
+      "release_date": "2024-05-23",
+      "synopsis": {
+        "en": null,
+        "id": null
+      },
+      "body": {
+        "en": null,
+        "id": null
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1500,
+      "status": "draft",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/456966"
+    },
+    {
+      "slug": "thaw-of-eons",
+      "category": "MAIN",
+      "chapter_label": "CH. I · ACT VII",
+      "title": {
+        "en": "Thaw of Eons",
+        "id": "Mencairnya Zaman"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.1",
+      "version_group": "1.X",
+      "region": "Mt. Firmament",
+      "characters": [
+        "Rover",
+        "Jinhsi",
+        "Changli",
+        "Abby"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-06-28",
+      "synopsis": {
+        "en": "With the Sentinel missing, the Rover travels to Mt. Firmament, where time itself has stopped flowing normally.",
+        "id": "Dengan hilangnya sang Sentinel, Rover pergi ke Mt. Firmament, tempat waktu tak lagi mengalir semestinya."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "After the Threnodian falls, the Rover gains a new companion and follows dreams of Sentinel Jue to Mt. Firmament. Time there has warped, and freeing the captive Sentinel forces the Magistrate to defy destiny for her city."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah sang Threnodian tumbang, Rover mendapat pendamping baru dan mengikuti mimpi tentang Sentinel Jue ke Mt. Firmament. Waktu di sana telah menyimpang, dan membebaskan sang Sentinel yang terkurung memaksa sang Magistrat menentang takdir demi kotanya."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1600,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/459842"
+    },
+    {
+      "slug": "immortal-blaze",
+      "category": "COMP",
+      "chapter_label": "COMPANION · CHANGLI",
+      "title": {
+        "en": "Immortal Blaze",
+        "id": "Kobaran Abadi"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.1",
+      "version_group": "1.X",
+      "region": "Mt. Firmament",
+      "characters": [
+        "Changli",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-06-28",
+      "synopsis": {
+        "en": "Changli's companion story, set in Mt. Firmament.",
+        "id": "Kisah pendamping Changli, berlatar di Mt. Firmament."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Changli away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Changli di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1700,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/458277"
+    },
+    {
+      "slug": "true-colors",
+      "category": "COMP",
+      "chapter_label": "COMPANION · ZHEZHI",
+      "title": {
+        "en": "True Colors",
+        "id": "Warna Sejati"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.2",
+      "version_group": "1.X",
+      "region": "Jinzhou",
+      "characters": [
+        "Zhezhi",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-08-15",
+      "synopsis": {
+        "en": "Zhezhi's companion story, set in Jinzhou.",
+        "id": "Kisah pendamping Zhezhi, berlatar di Jinzhou."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Zhezhi away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Zhezhi di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1800,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/464360"
+    },
+    {
+      "slug": "vigil-of-endless-night",
+      "category": "EXPL",
+      "chapter_label": null,
+      "title": {
+        "en": "Vigil of Endless Night",
+        "id": "Penjagaan Malam Tanpa Akhir"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.2",
+      "version_group": "1.X",
+      "region": "Huanglong",
+      "characters": [],
+      "est_minutes": null,
+      "release_date": "2024-08-15",
+      "synopsis": {
+        "en": null,
+        "id": null
+      },
+      "body": {
+        "en": null,
+        "id": null
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 1900,
+      "status": "draft",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/464361"
+    },
+    {
+      "slug": "to-the-shore-s-end",
+      "category": "MAIN",
+      "chapter_label": "CH. I · ACT VIII",
+      "title": {
+        "en": "To the Shore's End",
+        "id": "Menuju Ujung Pantai"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.3",
+      "version_group": "1.X",
+      "region": "Black Shores",
+      "characters": [
+        "Rover",
+        "Shorekeeper",
+        "Yangyang",
+        "Aalto"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-09-29",
+      "synopsis": {
+        "en": "Fear of a new Lament brings the Rover to the Black Shores, where the truth of their origins is revealed.",
+        "id": "Kekhawatiran akan Lament baru membawa Rover ke Black Shores, tempat kebenaran tentang asal-usulnya terungkap."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Phantoms of the last Lament resurface in the Port City of Guixu and the trail ends at the Black Shores. There the Shorekeeper reveals the Rover's past, and the Rover must enter the Tethys System to save her and stabilise it."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Bayangan dari Lament terakhir muncul kembali di Kota Pelabuhan Guixu dan jejaknya berakhir di Black Shores. Di sana Shorekeeper mengungkap masa lalu Rover, dan Rover harus masuk ke Sistem Tethys untuk menyelamatkannya dan menstabilkan sistem itu."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2000,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/474398"
+    },
+    {
+      "slug": "small-wooly-big-adventures",
+      "category": "COMP",
+      "chapter_label": "COMPANION · ENCORE",
+      "title": {
+        "en": "Small Wooly, Big Adventures",
+        "id": "Si Wol Kecil, Petualangan Besar"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.3",
+      "version_group": "1.X",
+      "region": "Jinzhou",
+      "characters": [
+        "Encore",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-10-24",
+      "synopsis": {
+        "en": "Encore's companion story, set in Jinzhou.",
+        "id": "Kisah pendamping Encore, berlatar di Jinzhou."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Encore away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Encore di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2100,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/474397"
+    },
+    {
+      "slug": "forking-paths-among-the-stars",
+      "category": "COMP",
+      "chapter_label": "COMPANION · CAMELLYA",
+      "title": {
+        "en": "Forking Paths Among the Stars",
+        "id": "Jalan Bercabang di Antara Bintang"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "1.4",
+      "version_group": "1.X",
+      "region": "Black Shores",
+      "characters": [
+        "Camellya",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2024-11-14",
+      "synopsis": {
+        "en": "Camellya's companion story, set in Black Shores.",
+        "id": "Kisah pendamping Camellya, berlatar di Black Shores."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Camellya away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Camellya di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2200,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/484900"
+    },
+    {
+      "slug": "through-the-sea-thou-break",
+      "category": "MAIN",
+      "chapter_label": "CH. II · PROLOGUE",
+      "title": {
+        "en": "Through the Sea Thou Break",
+        "id": "Menembus Lautan"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.0",
+      "version_group": "2.X",
+      "region": "Rinascita",
+      "characters": [
+        "Rover",
+        "Abby"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-01-02",
+      "synopsis": {
+        "en": "To save Abby's fading frequency, the Rover sails for Ragunna in search of Imperator, Sentinel of Rinascita.",
+        "id": "Demi menyelamatkan frekuensi Abby yang memudar, Rover berlayar ke Ragunna mencari Imperator, Sentinel Rinascita."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Abby's frequency is weakening and only Rinascita's Sentinel may hold the cure. The Rover crosses uncharted waters toward Ragunna, where long-hidden answers wait."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Frekuensi Abby melemah dan hanya Sentinel Rinascita yang mungkin punya penawarnya. Rover menyeberangi perairan yang belum terpetakan menuju Ragunna, tempat jawaban yang lama tersembunyi menunggu."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2300,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/492480"
+    },
+    {
+      "slug": "the-sacred-breeze-so-often-breathes",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT I",
+      "title": {
+        "en": "The Sacred Breeze So Often Breathes",
+        "id": "Angin Suci yang Selalu Berembus"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.0",
+      "version_group": "2.X",
+      "region": "Ragunna",
+      "characters": [
+        "Rover",
+        "Carlotta"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-01-02",
+      "synopsis": {
+        "en": "A friendly member of a great Rinascitan family guides the Rover through Ragunna, where something uncanny lurks.",
+        "id": "Anggota ramah dari keluarga besar Rinascita memandu Rover menjelajahi Ragunna, tempat sesuatu yang ganjil bersembunyi."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Rover is welcomed into Ragunna's lively streets by one of the city's leading families. Beneath the colour and music, signs appear that something is wrong with the city."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rover disambut di jalanan Ragunna yang ramai oleh salah satu keluarga terkemuka kota itu. Di balik warna dan musik, muncul tanda bahwa ada yang tidak beres dengan kota itu."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2400,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/492487"
+    },
+    {
+      "slug": "veils-off-in-sun-or-shadow",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT II",
+      "title": {
+        "en": "Veils Off in Sun or Shadow",
+        "id": "Tabir Tersingkap di Terang maupun Bayang"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.0",
+      "version_group": "2.X",
+      "region": "Ragunna",
+      "characters": [
+        "Rover",
+        "Carlotta",
+        "Roccia"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-01-02",
+      "synopsis": {
+        "en": "Strange events follow a member of the Fisalia family, and the Rover joins an investigation to find out why.",
+        "id": "Peristiwa aneh mengikuti seorang anggota keluarga Fisalia, dan Rover ikut menyelidiki penyebabnya."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Montelli family and an Acolyte of the Order team up with the Rover to look into a Fisalia family member whose arrival brought strange occurrences to Ragunna."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Keluarga Montelli dan seorang Akolit Ordo bekerja sama dengan Rover untuk menyelidiki anggota keluarga Fisalia yang kedatangannya membawa kejadian aneh ke Ragunna."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2500,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/492483"
+    },
+    {
+      "slug": "what-yesterday-wept-today-doth-sing",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT III",
+      "title": {
+        "en": "What Yesterday Wept, Today Doth Sing",
+        "id": "Yang Kemarin Menangis, Hari Ini Bernyanyi"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.0",
+      "version_group": "2.X",
+      "region": "Ragunna",
+      "characters": [
+        "Rover",
+        "Roccia",
+        "Brant",
+        "Phoebe"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-01-02",
+      "synopsis": {
+        "en": "The Fool's Troupe stages a forbidden Carnevale, until an old enemy crashes the celebration.",
+        "id": "Rombongan Fool's Troupe menggelar Carnevale terlarang, sampai seorang musuh lama mengacaukan perayaan itu."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A meeting with the Fool's Troupe leads to a grand but forbidden Carnevale. The festival turns to chaos when a foe carrying lycoris flowers arrives."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Pertemuan dengan Fool's Troupe berujung pada Carnevale yang megah namun terlarang. Festival berubah kacau saat musuh yang membawa bunga lycoris muncul."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2600,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/492529"
+    },
+    {
+      "slug": "if-on-a-rainy-night-a-family",
+      "category": "COMP",
+      "chapter_label": "COMPANION · CARLOTTA",
+      "title": {
+        "en": "If On a Rainy Night a Family",
+        "id": "Jika di Suatu Malam Berhujan, Sebuah Keluarga"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.0",
+      "version_group": "2.X",
+      "region": "Ragunna",
+      "characters": [
+        "Carlotta",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-01-02",
+      "synopsis": {
+        "en": "Carlotta's companion story, set in Ragunna.",
+        "id": "Kisah pendamping Carlotta, berlatar di Ragunna."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Carlotta away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Carlotta di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2700,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/492522"
+    },
+    {
+      "slug": "starry-is-the-night",
+      "category": "COMP",
+      "chapter_label": "COMPANION · ROCCIA",
+      "title": {
+        "en": "Starry is the Night",
+        "id": "Berbintanglah Malam Ini"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.0",
+      "version_group": "2.X",
+      "region": "The Strand, Rinascita",
+      "characters": [
+        "Roccia",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-01-02",
+      "synopsis": {
+        "en": "Roccia's companion story, set in The Strand, Rinascita.",
+        "id": "Kisah pendamping Roccia, berlatar di The Strand, Rinascita."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Roccia away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Roccia di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2800,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/495033"
+    },
+    {
+      "slug": "skyward-voyage",
+      "category": "SIDE",
+      "chapter_label": null,
+      "title": {
+        "en": "Skyward Voyage",
+        "id": "Pelayaran ke Langit"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.0",
+      "version_group": "2.X",
+      "region": "Rinascita",
+      "characters": [],
+      "est_minutes": null,
+      "release_date": "2025-01-02",
+      "synopsis": {
+        "en": null,
+        "id": null
+      },
+      "body": {
+        "en": null,
+        "id": null
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 2900,
+      "status": "draft",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/492566"
+    },
+    {
+      "slug": "sail-day-captain",
+      "category": "COMP",
+      "chapter_label": "COMPANION · BRANT",
+      "title": {
+        "en": "Sail Day, Captain!",
+        "id": "Hari Berlayar, Kapten!"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.1",
+      "version_group": "2.X",
+      "region": "Fool's Elysium, Rinascita",
+      "characters": [
+        "Brant",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-02-13",
+      "synopsis": {
+        "en": "Brant's companion story, set in Fool's Elysium, Rinascita.",
+        "id": "Kisah pendamping Brant, berlatar di Fool's Elysium, Rinascita."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Brant away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Brant di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3000,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/503778"
+    },
+    {
+      "slug": "the-maiden-the-defier-the-death-crier",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT IV",
+      "title": {
+        "en": "The Maiden, The Defier, The Death Crier",
+        "id": "Sang Gadis, Sang Penantang, Sang Penyeru Maut"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.2",
+      "version_group": "2.X",
+      "region": "Avinoleum",
+      "characters": [
+        "Rover",
+        "Cartethyia",
+        "Cantarella"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-03-27",
+      "synopsis": {
+        "en": "Called to Porto-Veno Castle, the Rover enters the ruins of Avinoleum and meets a tormented divinity.",
+        "id": "Dipanggil ke Kastel Porto-Veno, Rover memasuki reruntuhan Avinoleum dan bertemu sosok ilahi yang tersiksa."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The head of the Fisalia family invites the Rover to look for answers about the Sentinel Imperator. In the shifting towers of Avinoleum the Rover encounters the Martyred Maiden and her long search for absolution."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kepala keluarga Fisalia mengundang Rover mencari jawaban tentang Sentinel Imperator. Di menara-menara Avinoleum yang terus bergeser, Rover bertemu sang Gadis Martir dan pencariannya yang panjang akan penebusan."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3100,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/506710"
+    },
+    {
+      "slug": "a-fleeting-night-s-dream",
+      "category": "COMP",
+      "chapter_label": "COMPANION · CANTARELLA",
+      "title": {
+        "en": "A Fleeting Night's Dream",
+        "id": "Mimpi Semalam yang Fana"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.2",
+      "version_group": "2.X",
+      "region": "Porto-Veno Castle",
+      "characters": [
+        "Cantarella",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-03-27",
+      "synopsis": {
+        "en": "Cantarella's companion story, set in Porto-Veno Castle.",
+        "id": "Kisah pendamping Cantarella, berlatar di Porto-Veno Castle."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Cantarella away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Cantarella di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3200,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/507221"
+    },
+    {
+      "slug": "should-the-shooting-stars-blaze",
+      "category": "EXPL",
+      "chapter_label": null,
+      "title": {
+        "en": "Should the Shooting Stars Blaze",
+        "id": "Andai Bintang Jatuh Menyala"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.2",
+      "version_group": "2.X",
+      "region": "Rinascita",
+      "characters": [],
+      "est_minutes": null,
+      "release_date": "2025-03-27",
+      "synopsis": {
+        "en": null,
+        "id": null
+      },
+      "body": {
+        "en": null,
+        "id": null
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3300,
+      "status": "draft",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/507266"
+    },
+    {
+      "slug": "a-blaze-in-the-dark",
+      "category": "COMP",
+      "chapter_label": "COMPANION · ZANI",
+      "title": {
+        "en": "A Blaze in the Dark",
+        "id": "Nyala di Kegelapan"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.3",
+      "version_group": "2.X",
+      "region": "Bank Street, Rinascita",
+      "characters": [
+        "Zani",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-04-29",
+      "synopsis": {
+        "en": "Zani's companion story, set in Bank Street, Rinascita.",
+        "id": "Kisah pendamping Zani, berlatar di Bank Street, Rinascita."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A character story that follows Zani away from the main quest. Editors: add a spoiler-light summary of the plot here."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Kisah karakter yang mengikuti Zani di luar alur utama. Editor: tambahkan ringkasan alur tanpa spoiler berat di sini."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3400,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/517734"
+    },
+    {
+      "slug": "shadow-of-glory",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT V",
+      "title": {
+        "en": "Shadow of Glory",
+        "id": "Bayang-Bayang Kejayaan"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.4",
+      "version_group": "2.X",
+      "region": "Septimont",
+      "characters": [
+        "Rover",
+        "Lupa",
+        "Cartethyia"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-06-12",
+      "synopsis": {
+        "en": "Searching for the Blessed Maiden leads the Rover to Septimont, where a great tournament hides an anomaly.",
+        "id": "Pencarian sang Gadis Terberkati membawa Rover ke Septimont, tempat sebuah turnamen besar menyembunyikan anomali."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Maiden cannot be found in the Inverted Tower, so the Rover follows her trace to proud Septimont. The city's glorious tournament seems to mask an anomaly that only the Rover can sense."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Sang Gadis tidak ditemukan di Menara Terbalik, maka Rover mengikuti jejaknya ke Septimont yang angkuh. Turnamen gemilang kota itu seolah menutupi anomali yang hanya bisa dirasakan Rover."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3500,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/528736"
+    },
+    {
+      "slug": "flames-of-heart",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT VI",
+      "title": {
+        "en": "Flames of Heart",
+        "id": "Api di Dalam Hati"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.4",
+      "version_group": "2.X",
+      "region": "Septimont",
+      "characters": [
+        "Rover",
+        "Lupa"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-07-03",
+      "synopsis": {
+        "en": "As Septimont's anomaly unravels, the Rover and Lupa hunt the mastermind behind it.",
+        "id": "Saat anomali Septimont terungkap, Rover dan Lupa memburu dalang di baliknya."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Rover and the star gladiator Lupa follow the trail into a burial ground of heroes. Lupa's burning resolve proves she belongs at the centre of the city's story."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rover dan gladiator bintang Lupa mengikuti jejak hingga ke pemakaman para pahlawan. Tekad Lupa yang membara membuktikan bahwa ia layak menjadi pusat kisah kota itu."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3600,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/533154"
+    },
+    {
+      "slug": "dreamcatchers-in-the-secret-gardens",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT VII",
+      "title": {
+        "en": "Dreamcatchers in the Secret Gardens",
+        "id": "Penangkap Mimpi di Taman Rahasia"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.5",
+      "version_group": "2.X",
+      "region": "Rinascita",
+      "characters": [
+        "Rover",
+        "Phrolova"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-07-24",
+      "synopsis": {
+        "en": "A dreamer seals her heart away in a hidden realm of dreams built on melancholy music.",
+        "id": "Seorang pemimpi mengunci hatinya di dunia mimpi tersembunyi yang dibangun dari musik melankolis."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Rover follows a dreamer into a realm beyond ordinary sight, shaped by sorrowful melodies. She walks a fragile path between hope and delusion and refuses to look back."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rover mengikuti seorang pemimpi ke alam di luar pandangan biasa, yang dibentuk oleh melodi yang sendu. Ia menempuh jalan rapuh antara harapan dan khayalan dan menolak menoleh ke belakang."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3700,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/538764"
+    },
+    {
+      "slug": "overture-rust-sword-and-the-sun",
+      "category": "SEGUE",
+      "chapter_label": "CH. II · OVERTURE",
+      "title": {
+        "en": "Overture: Rust, Sword, and the Sun",
+        "id": "Overtur: Karat, Pedang, dan Matahari"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.6",
+      "version_group": "2.X",
+      "region": "Septimont",
+      "characters": [
+        "Rover",
+        "Abby",
+        "Augusta"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-08-28",
+      "synopsis": {
+        "en": "A mysterious figure retells the story of Augusta before she became Septimont's leader.",
+        "id": "Sosok misterius menceritakan kembali kisah Augusta sebelum ia menjadi pemimpin Septimont."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "While checking on Septimont after recent events, the Rover and Abby meet a stranger who wants to tell Augusta's story from before she rose to lead the nation."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Saat memeriksa keadaan Septimont setelah peristiwa terakhir, Rover dan Abby bertemu orang asing yang ingin menceritakan kisah Augusta sebelum ia memimpin bangsanya."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3800,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/543756"
+    },
+    {
+      "slug": "by-sun-s-burning-hand",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT VIII",
+      "title": {
+        "en": "By Sun's Burning Hand",
+        "id": "Oleh Tangan Matahari yang Membara"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.6",
+      "version_group": "2.X",
+      "region": "Sanguis Plateau",
+      "characters": [
+        "Rover",
+        "Augusta",
+        "Iuno"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-08-28",
+      "synopsis": {
+        "en": "The Ephor Augusta invites the Rover to the Hunt on the Sanguis Plateau, where the Dark Tide never recedes.",
+        "id": "Sang Ephor Augusta mengundang Rover ke Perburuan di Dataran Sanguis, tempat Pasang Gelap tak pernah surut."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "On the ominous plateau the Rover joins Septimont's Hunt against the Dark Tide. The journey uncovers a prophecy that binds the Ephor to the Priestess Iuno."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Di dataran yang muram itu, Rover ikut dalam Perburuan Septimont melawan Pasang Gelap. Perjalanan ini menyingkap sebuah ramalan yang mengikat sang Ephor dengan Pendeta Iuno."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 3900,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/545730"
+    },
+    {
+      "slug": "by-moon-s-fated-light",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT IX",
+      "title": {
+        "en": "By Moon's Fated Light",
+        "id": "Oleh Cahaya Bulan yang Ditakdirkan"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.6",
+      "version_group": "2.X",
+      "region": "Sanguis Plateau",
+      "characters": [
+        "Rover",
+        "Iuno",
+        "Augusta"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-08-28",
+      "synopsis": {
+        "en": "The Dark Tide retreats, but the Priestess Iuno vanishes from the world and from everyone's memory.",
+        "id": "Pasang Gelap mundur, tetapi Pendeta Iuno lenyap dari dunia dan dari ingatan semua orang."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Septimont celebrates pushing back the Dark Tide, yet Iuno is gone and almost no one remembers her. The Rover investigates her disappearance and tries to pull her back from Chaos."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Septimont merayakan keberhasilan memukul mundur Pasang Gelap, namun Iuno hilang dan hampir tak ada yang mengingatnya. Rover menyelidiki hilangnya dia dan berusaha menariknya kembali dari Kekacauan."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4000,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/545731"
+    },
+    {
+      "slug": "the-bygone-shall-always-return",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT X",
+      "title": {
+        "en": "The Bygone Shall Always Return",
+        "id": "Yang Telah Berlalu Akan Selalu Kembali"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.7",
+      "version_group": "2.X",
+      "region": "Rinascita",
+      "characters": [
+        "Rover",
+        "Galbrena",
+        "Iuno"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-10-09",
+      "synopsis": {
+        "en": "A winged figure who seems to command Tacet Discords challenges the Rover: who is Galbrena?",
+        "id": "Sosok bersayap api yang seolah memerintah Tacet Discord menantang Rover: siapakah Galbrena?"
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "With Iuno rescued, a new mystery appears in the form of Galbrena, who flies on wings of fire. The Rover sets out to learn who she is and what she wants."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah Iuno diselamatkan, misteri baru muncul dalam wujud Galbrena yang terbang dengan sayap api. Rover berangkat untuk mengetahui siapa dia dan apa tujuannya."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4100,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/555987"
+    },
+    {
+      "slug": "dawn-breaks-on-dark-tides",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT XI",
+      "title": {
+        "en": "Dawn Breaks on Dark Tides",
+        "id": "Fajar Menyingsing di Atas Pasang Gelap"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.7",
+      "version_group": "2.X",
+      "region": "Rinascita",
+      "characters": [
+        "Rover",
+        "Cartethyia",
+        "Augusta",
+        "Galbrena"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-10-09",
+      "synopsis": {
+        "en": "All of Rinascita hangs in the balance as the Threnodian Leviathan prepares to return.",
+        "id": "Seluruh Rinascita dipertaruhkan saat Threnodian Leviathan bersiap untuk kembali."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Every thread of the chapter leads here. The Rover and their allies stand against the returning Leviathan in the final battle for Rinascita."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setiap benang kisah bab ini bermuara di sini. Rover dan sekutunya menghadapi Leviathan yang kembali dalam pertempuran terakhir demi Rinascita."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4200,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/556087"
+    },
+    {
+      "slug": "stranger-in-a-strange-land",
+      "category": "SEGUE",
+      "chapter_label": "CH. II · AFTERSTORY",
+      "title": {
+        "en": "Stranger in a Strange Land",
+        "id": "Orang Asing di Negeri Asing"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.7",
+      "version_group": "2.X",
+      "region": "Rinascita",
+      "characters": [
+        "Qiuyuan"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-10-09",
+      "synopsis": {
+        "en": "The blind swordsman Qiuyuan retells recent events in Rinascita from his own point of view.",
+        "id": "Pendekar pedang buta Qiuyuan menceritakan kembali peristiwa terbaru di Rinascita dari sudut pandangnya."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "With the Rinascita chapter closed, the story steps aside to follow Qiuyuan. His path through the same events reveals new stories and secrets."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah bab Rinascita ditutup, cerita beralih mengikuti Qiuyuan. Perjalanannya melalui peristiwa yang sama menyingkap kisah dan rahasia baru."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4300,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/556238"
+    },
+    {
+      "slug": "stagnant-dawn-on-wastelands",
+      "category": "MAIN",
+      "chapter_label": "CH. II · ACT XII",
+      "title": {
+        "en": "Stagnant Dawn on Wastelands",
+        "id": "Fajar yang Terhenti di Tanah Gersang"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.8",
+      "version_group": "2.X",
+      "region": "Honami City",
+      "characters": [
+        "Rover",
+        "Chisa"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-11-20",
+      "synopsis": {
+        "en": "Shifting coordinates from the Threnodian's Gem lead the Rover to a metropolis that was erased long ago.",
+        "id": "Koordinat yang terus bergeser dari Permata Threnodian membawa Rover ke sebuah metropolis yang telah lama terhapus."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "While the Black Shores study the Leviathan's Gem, a pair of drifting coordinates points somewhere unknown. Following them, the Rover arrives in a city that should no longer exist."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Saat Black Shores meneliti Permata sang Leviathan, sepasang koordinat yang terus bergeser menunjuk ke tempat tak dikenal. Mengikutinya, Rover tiba di sebuah kota yang seharusnya sudah tidak ada."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4400,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/564916"
+    },
+    {
+      "slug": "flowing-starlight-in-the-iris",
+      "category": "SEGUE",
+      "chapter_label": "CH. II · SEGUE",
+      "title": {
+        "en": "Flowing Starlight in the Iris",
+        "id": "Cahaya Bintang yang Mengalir di Iris"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "2.8",
+      "version_group": "2.X",
+      "region": "Black Shores",
+      "characters": [
+        "Rover",
+        "Chisa"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-11-20",
+      "synopsis": {
+        "en": "After escaping Honami City, the Rover visits Chisa as she recovers at the Black Shores.",
+        "id": "Setelah lolos dari Kota Honami, Rover menjenguk Chisa yang sedang pulih di Black Shores."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Chisa pushed herself to the edge of overclocking more than once during the escape. Now she is being treated at the Black Shores, and the reunion becomes a new beginning for both of them."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Chisa berkali-kali memaksa dirinya hingga ambang overclocking selama pelarian. Kini ia dirawat di Black Shores, dan pertemuan kembali itu menjadi awal baru bagi keduanya."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4500,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/564931"
+    },
+    {
+      "slug": "when-the-unknown-thrums",
+      "category": "MAIN",
+      "chapter_label": "CH. III · PROLOGUE",
+      "title": {
+        "en": "When the Unknown Thrums",
+        "id": "Saat yang Tak Dikenal Berdengung"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.0",
+      "version_group": "3.X",
+      "region": "Lahai-Roi",
+      "characters": [
+        "Rover",
+        "Chisa"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-12-25",
+      "synopsis": {
+        "en": "Through a stabilised portal, the Rover and Chisa arrive at Startorch Academy and straight into a Voidstorm.",
+        "id": "Melalui portal yang telah stabil, Rover dan Chisa tiba di Akademi Startorch dan langsung menghadapi Voidstorm."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Rover and Chisa head to Startorch Academy in Lahai-Roi. On arrival they face another attempt to steal the Rover's frequency and a Voidstorm sweeping over the campus."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rover dan Chisa menuju Akademi Startorch di Lahai-Roi. Begitu tiba, mereka menghadapi upaya lain untuk mencuri frekuensi Rover dan Voidstorm yang menyapu kampus."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4600,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/571778"
+    },
+    {
+      "slug": "what-burns-beneath-frostlands",
+      "category": "MAIN",
+      "chapter_label": "CH. III · ACT I",
+      "title": {
+        "en": "What Burns Beneath Frostlands",
+        "id": "Yang Membara di Bawah Tanah Beku"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.0",
+      "version_group": "3.X",
+      "region": "Lahai-Roi",
+      "characters": [
+        "Rover",
+        "Lynae"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-12-25",
+      "synopsis": {
+        "en": "Lynae welcomes the new student to Startorch Academy with a campus tour that hides its own agenda.",
+        "id": "Lynae menyambut murid baru di Akademi Startorch dengan tur kampus yang menyimpan agenda tersendiri."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "After rescuing the Rover from a Voidworm attack, Lynae offers an impromptu tour of Lahai-Roi. Her friendly welcome comes with a purpose she has not yet revealed."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah menyelamatkan Rover dari serangan Voidworm, Lynae menawarkan tur dadakan keliling Lahai-Roi. Sambutan hangatnya membawa tujuan yang belum ia ungkapkan."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4700,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/571785"
+    },
+    {
+      "slug": "ode-to-the-second-sunrise",
+      "category": "MAIN",
+      "chapter_label": "CH. III · ACT II",
+      "title": {
+        "en": "Ode to the Second Sunrise",
+        "id": "Pujian bagi Matahari Terbit Kedua"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.0",
+      "version_group": "3.X",
+      "region": "Lahai-Roi",
+      "characters": [
+        "Rover",
+        "Mornye"
+      ],
+      "est_minutes": null,
+      "release_date": "2025-12-25",
+      "synopsis": {
+        "en": "The Rover and Professor Mornye race to stop Lahai-Roi's artificial sun from crashing into the underground.",
+        "id": "Rover dan Profesor Mornye berpacu mencegah matahari buatan Lahai-Roi jatuh ke dunia bawah tanah."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Outside Fractsidus agents plan to disrupt the New Solar Ceremony. The Rover teams up with Professor Mornye to keep the artificial sun in the sky."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Agen Fractsidus dari luar berencana mengacaukan Upacara Surya Baru. Rover bekerja sama dengan Profesor Mornye agar matahari buatan tetap di langit."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4800,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/571796"
+    },
+    {
+      "slug": "urban-legend-the-anonymous-inviter",
+      "category": "SIDE",
+      "chapter_label": null,
+      "title": {
+        "en": "Urban Legend: The Anonymous Inviter",
+        "id": "Legenda Urban: Pengundang Anonim"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.0",
+      "version_group": "3.X",
+      "region": "Lahai-Roi",
+      "characters": [],
+      "est_minutes": null,
+      "release_date": "2025-12-25",
+      "synopsis": {
+        "en": null,
+        "id": null
+      },
+      "body": {
+        "en": null,
+        "id": null
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 4900,
+      "status": "draft",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/572486"
+    },
+    {
+      "slug": "the-star-that-voyages-far",
+      "category": "MAIN",
+      "chapter_label": "CH. III · ACT III",
+      "title": {
+        "en": "The Star That Voyages Far",
+        "id": "Bintang yang Berlayar Jauh"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.1",
+      "version_group": "3.X",
+      "region": "Frostlands Surface",
+      "characters": [
+        "Rover",
+        "Aemeath",
+        "Luuk Herssen"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-02-05",
+      "synopsis": {
+        "en": "The Rover meets Aemeath and, with Luuk Herssen, discovers an orbital station holding truths about Solaris-3's future.",
+        "id": "Rover bertemu Aemeath dan bersama Luuk Herssen menemukan stasiun orbit yang menyimpan kebenaran tentang masa depan Solaris-3."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Aemeath's unusual circumstances draw the Rover into a journey to the Frostlands Surface with Luuk Herssen. An orbital space station reveals major findings about Solaris-3, the Rover's origins and Aemeath's true goal with the Exostrider."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Keadaan Aemeath yang tidak biasa menarik Rover ke dalam perjalanan menuju Permukaan Frostlands bersama Luuk Herssen. Sebuah stasiun luar angkasa di orbit mengungkap temuan besar tentang Solaris-3, asal-usul Rover, dan tujuan sejati Aemeath dengan Exostrider."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5000,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/578306"
+    },
+    {
+      "slug": "all-that-sunlight-touches",
+      "category": "SEGUE",
+      "chapter_label": "CH. III · SEGUE",
+      "title": {
+        "en": "All That Sunlight Touches",
+        "id": "Segala yang Disentuh Cahaya Matahari"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.1",
+      "version_group": "3.X",
+      "region": "Roya Frostlands",
+      "characters": [
+        "Rover",
+        "Luuk Herssen"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-02-05",
+      "synopsis": {
+        "en": "The Rover and Luuk Herssen regroup, then return to the orbital station when Nivora is taken there.",
+        "id": "Rover dan Luuk Herssen menyusun ulang strategi, lalu kembali ke stasiun orbit saat Nivora dibawa ke sana."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "After a painful turn of events in Roya Frostlands, the two plan their next move. A kidnapping forces them back to the orbital space station."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah rangkaian peristiwa yang menyakitkan di Roya Frostlands, keduanya merencanakan langkah berikutnya. Sebuah penculikan memaksa mereka kembali ke stasiun luar angkasa di orbit."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5100,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/578309"
+    },
+    {
+      "slug": "gold-suspended-in-the-shadows",
+      "category": "MAIN",
+      "chapter_label": "CH. III · ACT IV",
+      "title": {
+        "en": "Gold Suspended in the Shadows",
+        "id": "Emas yang Menggantung di Dalam Bayang"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.2",
+      "version_group": "3.X",
+      "region": "Startorch Academy",
+      "characters": [
+        "Rover",
+        "Sigrika"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-03-19",
+      "synopsis": {
+        "en": "Hunting an infiltrator inside the academy, the Rover is drawn into quests with Sigrika, heir of the Heliodic Six.",
+        "id": "Saat memburu penyusup di dalam akademi, Rover terlibat dalam misi bersama Sigrika, penerus Heliodic Six."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Rover searches Startorch Academy for a possible infiltrator. Along the way they become caught up in a series of tasks with Sigrika, successor to Roya's Heliodic Six, during the New Solar Celebration."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rover mencari kemungkinan penyusup di Akademi Startorch. Di tengah jalan, mereka terlibat serangkaian tugas bersama Sigrika, penerus Heliodic Six dari Roya, selama Perayaan Surya Baru."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5200,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/586746"
+    },
+    {
+      "slug": "rabbit-reflected-in-shades",
+      "category": "SEGUE",
+      "chapter_label": "CH. III · SEGUE",
+      "title": {
+        "en": "Rabbit Reflected in Shades",
+        "id": "Kelinci yang Terpantul dalam Bayangan"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.2",
+      "version_group": "3.X",
+      "region": "Startorch Academy",
+      "characters": [
+        "Rover",
+        "Lucilla"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-03-19",
+      "synopsis": {
+        "en": "The Rover and President Lucilla confront the academy's Dark Side before it threatens the whole region.",
+        "id": "Rover dan Presiden Lucilla menghadapi Sisi Gelap akademi sebelum mengancam seluruh wilayah."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Startorch Academy's Dark Side has become a real danger to Lahai-Roi's stability. Lucilla and the Rover work together to resolve it."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Sisi Gelap Akademi Startorch telah menjadi bahaya nyata bagi kestabilan Lahai-Roi. Lucilla dan Rover bekerja sama untuk mengatasinya."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5300,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/586761"
+    },
+    {
+      "slug": "wishes-in-the-bell",
+      "category": "SEGUE",
+      "chapter_label": "CH. III · SEGUE",
+      "title": {
+        "en": "Wishes in the Bell",
+        "id": "Harapan di Dalam Lonceng"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.3",
+      "version_group": "3.X",
+      "region": "Lahai-Roi",
+      "characters": [
+        "Hiyuki"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-04-30",
+      "synopsis": {
+        "en": "Spacetrek Collective operative Hiyuki investigates the Voidstorm threat over Lahai-Roi.",
+        "id": "Hiyuki, operatif Spacetrek Collective, menyelidiki ancaman Voidstorm di atas Lahai-Roi."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "This segue follows Hiyuki of the Special Response Force as she looks into the Voidstorms that keep striking Lahai-Roi."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Selingan ini mengikuti Hiyuki dari Pasukan Tanggap Khusus saat ia menyelidiki Voidstorm yang terus melanda Lahai-Roi."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5400,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/596749"
+    },
+    {
+      "slug": "starlights-from-yesterdays",
+      "category": "MAIN",
+      "chapter_label": "CH. III · ACT V",
+      "title": {
+        "en": "Starlights from Yesterdays",
+        "id": "Cahaya Bintang dari Hari-Hari Kemarin"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.3",
+      "version_group": "3.X",
+      "region": "Lahai-Roi",
+      "characters": [
+        "Rover",
+        "Aemeath",
+        "Lynae",
+        "Luuk Herssen"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-04-30",
+      "synopsis": {
+        "en": "Solaris faces Aleph-1 across space and time to save Aemeath and break the world's devastating loop.",
+        "id": "Solaris menghadapi Aleph-1 melintasi ruang dan waktu demi menyelamatkan Aemeath dan memutus siklus yang menghancurkan dunia."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Prepared for the world-ending threat of Aleph-1, the Rover and their allies fight the Threnodian across space and time. Their goal is to save Aemeath and the Exostrider and end the loop the world is trapped in."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Siap menghadapi ancaman kiamat Aleph-1, Rover dan sekutunya melawan sang Threnodian melintasi ruang dan waktu. Tujuan mereka adalah menyelamatkan Aemeath dan Exostrider serta mengakhiri siklus yang menjerat dunia."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5500,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/597003"
+    },
+    {
+      "slug": "beneath-a-melting-night-sky",
+      "category": "SEGUE",
+      "chapter_label": "CH. III · SEGUE",
+      "title": {
+        "en": "Beneath a Melting Night Sky",
+        "id": "Di Bawah Langit Malam yang Mencair"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.3",
+      "version_group": "3.X",
+      "region": "Lahai-Roi",
+      "characters": [
+        "Rover",
+        "Denia"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-04-30",
+      "synopsis": {
+        "en": "After victory over Aleph-1, the Rover looks for the Artificial Resonator Denia and her origins.",
+        "id": "Setelah kemenangan atas Aleph-1, Rover mencari Resonator Buatan Denia dan asal-usulnya."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "With the Fractsidus and Aleph-1 defeated, the Rover tracks down Denia to learn where she came from and what she is facing now."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah Fractsidus dan Aleph-1 dikalahkan, Rover melacak Denia untuk mengetahui asal-usulnya dan apa yang sedang ia hadapi."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5600,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/597023"
+    },
+    {
+      "slug": "at-dream-s-edge",
+      "category": "EVNT",
+      "chapter_label": "CH. III · SIDE STORY",
+      "title": {
+        "en": "At Dream's Edge",
+        "id": "Di Tepi Mimpi"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.4",
+      "version_group": "3.X",
+      "region": "Lahai-Roi",
+      "characters": [
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-06-08",
+      "synopsis": {
+        "en": "A collaboration side story in which the Rover faces an otherworldly enemy alongside otherworldly friends.",
+        "id": "Cerita sampingan kolaborasi saat Rover menghadapi musuh dari dunia lain bersama kawan-kawan dari dunia lain."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Part of the Cyberpunk: Edgerunners collaboration and separate from the main plot. The Rover meets an unlikely enemy from another world and unexpected allies who are ready to help."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Bagian dari kolaborasi Cyberpunk: Edgerunners dan terpisah dari alur utama. Rover bertemu musuh tak terduga dari dunia lain dan sekutu tak terduga yang siap membantu."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5700,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/603079"
+    },
+    {
+      "slug": "we-choose-the-sky",
+      "category": "SEGUE",
+      "chapter_label": "CH. III · SEGUE",
+      "title": {
+        "en": "We Choose the Sky",
+        "id": "Kami Memilih Langit"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.4",
+      "version_group": "3.X",
+      "region": "Startorch Academy",
+      "characters": [
+        "Lucilla",
+        "Rover"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-06-08",
+      "synopsis": {
+        "en": "Lucilla takes centre stage again as she weighs the future threats facing Startorch Academy and Lahai-Roi.",
+        "id": "Lucilla kembali menjadi sorotan saat ia menimbang ancaman masa depan bagi Akademi Startorch dan Lahai-Roi."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "After the Fractsidus attack and the banishing of Aleph-1, Lucilla turns to what comes next for the academy and for Lahai-Roi."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah serangan Fractsidus dan terusirnya Aleph-1, Lucilla memikirkan apa yang akan datang bagi akademi dan Lahai-Roi."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5800,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/603081"
+    },
+    {
+      "slug": "the-wind-before-the-storm",
+      "category": "MAIN",
+      "chapter_label": "CH. IV · ACT I",
+      "title": {
+        "en": "The Wind Before the Storm",
+        "id": "Angin Sebelum Badai"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.5",
+      "version_group": "3.X",
+      "region": "Mengzhou",
+      "characters": [
+        "Rover",
+        "Suisui",
+        "Yangyang"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-07-10",
+      "synopsis": {
+        "en": "Back in Huanglong, the Rover learns Yangyang is missing in Xuanfang and joins her sister Suisui to find her.",
+        "id": "Kembali ke Huanglong, Rover mengetahui Yangyang hilang di Xuanfang dan bergabung dengan adiknya, Suisui, untuk mencarinya."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "With Lahai-Roi safe, the Rover returns to Huanglong to look into their origins and the next Threnodian threat. On the way they hear that an expedition into Xuanfang went wrong and Yangyang has vanished."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Setelah Lahai-Roi aman, Rover kembali ke Huanglong untuk menelusuri asal-usulnya dan ancaman Threnodian berikutnya. Di perjalanan, mereka mendengar ekspedisi ke Xuanfang gagal dan Yangyang menghilang."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 5900,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/606975"
+    },
+    {
+      "slug": "xuanling-sings-storm-quelled",
+      "category": "MAIN",
+      "chapter_label": "CH. IV · ACT II",
+      "title": {
+        "en": "Xuanling Sings, Storm Quelled",
+        "id": "Xuanling Bernyanyi, Badai Mereda"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.5",
+      "version_group": "3.X",
+      "region": "Xuanfang Hold",
+      "characters": [
+        "Rover",
+        "Suisui",
+        "Yangyang"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-07-10",
+      "synopsis": {
+        "en": "Rogue Autopuppets riot through Xuanfang, and an artisan chasing Sentinel technology launches a full assault.",
+        "id": "Autopuppet liar mengamuk di Xuanfang, dan seorang artisan yang memburu teknologi Sentinel melancarkan serangan besar."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "The Rover and Suisui find that a troubled artisan is behind the rogue Autopuppets. When the artisan turns them on Xuanfang Hold, the Rover and their allies must defend it."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Rover dan Suisui menemukan bahwa seorang artisan yang bermasalah berada di balik Autopuppet liar. Saat ia mengarahkan mereka ke Benteng Xuanfang, Rover dan sekutunya harus mempertahankannya."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 6000,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/606977"
+    },
+    {
+      "slug": "the-chant-of-unseen-tides",
+      "category": "SEGUE",
+      "chapter_label": "CH. IV · SEGUE",
+      "title": {
+        "en": "The Chant of Unseen Tides",
+        "id": "Kidung Pasang yang Tak Terlihat"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.5",
+      "version_group": "3.X",
+      "region": "Xuanfang Hold",
+      "characters": [
+        "Yangyang"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-07-10",
+      "synopsis": {
+        "en": "Helping Xuanfang recover, Yangyang begins to hear whispering voices inside her head.",
+        "id": "Saat membantu Xuanfang pulih, Yangyang mulai mendengar suara-suara berbisik di dalam kepalanya."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Yangyang stays to help citizens affected by the attack while waiting for her Resonance Report. Murmuring voices follow her, and she sets out to find their source."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Yangyang tetap tinggal untuk membantu warga yang terdampak serangan sambil menunggu Laporan Resonansinya. Suara-suara bergumam mengikutinya, dan ia berusaha menemukan sumbernya."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 6100,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/606978"
+    },
+    {
+      "slug": "faithful-heart-tested-at-skyfall",
+      "category": "EXPL",
+      "chapter_label": null,
+      "title": {
+        "en": "Faithful Heart Tested at Skyfall",
+        "id": "Hati Setia Diuji di Skyfall"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.5",
+      "version_group": "3.X",
+      "region": "Mengzhou",
+      "characters": [],
+      "est_minutes": null,
+      "release_date": "2026-07-10",
+      "synopsis": {
+        "en": null,
+        "id": null
+      },
+      "body": {
+        "en": null,
+        "id": null
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 6200,
+      "status": "draft",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/608607"
+    },
+    {
+      "slug": "song-of-the-heart-sword",
+      "category": "MAIN",
+      "chapter_label": "CH. IV · ACT III",
+      "title": {
+        "en": "Song of the Heart Sword",
+        "id": "Lagu Pedang Hati"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.6",
+      "version_group": "3.X",
+      "region": "Xuanfang Hold",
+      "characters": [
+        "Rover",
+        "Qingxiao",
+        "Jingran",
+        "Yangyang"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-08-20",
+      "synopsis": {
+        "en": "Searching for Hsin with Qingxiao, the Rover is pulled into a war among cloud shuttles above Xuanfang.",
+        "id": "Mencari Hsin bersama Qingxiao, Rover terseret ke dalam perang di antara kapal awan di atas Xuanfang."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Xianling Village comes under attack and a strange coin pendant opens a path into the Manifold Sanctum. The Rover and the sword master Qingxiao cross fleets of Cloud Shuttles, face her past, and stand against Muyu."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Desa Xianling diserang dan sebuah liontin koin aneh membuka jalan ke Manifold Sanctum. Rover dan ahli pedang Qingxiao menyeberangi armada Kapal Awan, menghadapi masa lalunya, dan melawan Muyu."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 6300,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/614751"
+    },
+    {
+      "slug": "the-nethermancer-s-requiem",
+      "category": "SEGUE",
+      "chapter_label": "CH. IV · SEGUE",
+      "title": {
+        "en": "The Nethermancer's Requiem",
+        "id": "Requiem Sang Nethermancer"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.6",
+      "version_group": "3.X",
+      "region": "Xuanfang Hold",
+      "characters": [
+        "Jingran"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-08-20",
+      "synopsis": {
+        "en": "A segue centred on Jingran, the Nethermancer, set after the battle above Xuanfang.",
+        "id": "Selingan yang berpusat pada Jingran, sang Nethermancer, setelah pertempuran di atas Xuanfang."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "This segue continues the story of Jingran after the events of Song of the Heart Sword and leads into Act IV."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Selingan ini melanjutkan kisah Jingran setelah peristiwa Lagu Pedang Hati dan mengantar ke Babak IV."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 6400,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/614756"
+    },
+    {
+      "slug": "simulacrum-of-the-heart",
+      "category": "MAIN",
+      "chapter_label": "CH. IV · ACT IV",
+      "title": {
+        "en": "Simulacrum of the Heart",
+        "id": "Simulakrum Hati"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.7",
+      "version_group": "3.X",
+      "region": "Mengzhou",
+      "characters": [
+        "Rover",
+        "Hsin",
+        "Suoming",
+        "Qingxiao"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-09-30",
+      "synopsis": {
+        "en": "Rumours say Xuanfang Hold is near collapse, and the Rover enters Hsin's Heart Realm to find the fading Moon Fox.",
+        "id": "Kabar beredar bahwa Benteng Xuanfang hampir runtuh, dan Rover memasuki Alam Hati Hsin untuk menemukan Rubah Bulan yang memudar."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Qingxiao fears Hsin's presence is weakening, so the Rover follows Intendant Suoming into the Manifold Sanctum. In the Simulacrum Nexus and Hsin's memories they uncover what happened to the Moon Fox before the Waking Moon Festival."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Qingxiao khawatir kehadiran Hsin melemah, maka Rover mengikuti Intendan Suoming ke Manifold Sanctum. Di Simulacrum Nexus dan ingatan Hsin, mereka mengungkap apa yang terjadi pada sang Rubah Bulan sebelum Festival Bulan Terjaga."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 6500,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/624354"
+    },
+    {
+      "slug": "moonlike-heart-mortal-longing",
+      "category": "TALE",
+      "chapter_label": "CH. IV · TALES",
+      "title": {
+        "en": "Moonlike Heart, Mortal Longing",
+        "id": "Hati Laksana Bulan, Kerinduan Fana"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.7",
+      "version_group": "3.X",
+      "region": "Mengxuan Vale",
+      "characters": [
+        "Rover",
+        "Hsin"
+      ],
+      "est_minutes": null,
+      "release_date": "2026-09-30",
+      "synopsis": {
+        "en": "The first Tales quest: Xuanqing asks the Rover to help repair a Feeling Capsule meant for Hsin.",
+        "id": "Misi Tales pertama: Xuanqing meminta Rover membantu memperbaiki Kapsul Perasaan yang ditujukan untuk Hsin."
+      },
+      "body": {
+        "en": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "A message from a stranger introduces Xuanqing and her Myriad Snare, Tuntun. Restoring the broken Feeling Capsule takes the Rover through the Heart of Ruin and Xuanqing's own memories, ending with a gift delivered to Hsin."
+                }
+              ]
+            }
+          ]
+        },
+        "id": {
+          "type": "doc",
+          "content": [
+            {
+              "type": "paragraph",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "Pesan dari orang asing memperkenalkan Xuanqing dan Myriad Snare miliknya, Tuntun. Memulihkan Kapsul Perasaan yang rusak membawa Rover melewati Heart of Ruin dan ingatan Xuanqing sendiri, diakhiri dengan hadiah yang diserahkan kepada Hsin."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 6600,
+      "status": "published",
+      "publish_at": null,
+      "needs_review": false,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/624714"
+    },
+    {
+      "slug": "days-without-number",
+      "category": "EXPL",
+      "chapter_label": null,
+      "title": {
+        "en": "Days Without Number",
+        "id": "Hari-Hari Tak Terhitung"
+      },
+      "original_title": null,
+      "original_title_lang": null,
+      "romanised_title": null,
+      "version": "3.7",
+      "version_group": "3.X",
+      "region": "Mengzhou",
+      "characters": [],
+      "est_minutes": null,
+      "release_date": "2026-09-30",
+      "synopsis": {
+        "en": null,
+        "id": null
+      },
+      "body": {
+        "en": null,
+        "id": null
+      },
+      "spine_media": null,
+      "cover_media": null,
+      "sort_key": 6700,
+      "status": "draft",
+      "publish_at": null,
+      "needs_review": true,
+      "source_url": "https://game8.co/games/Wuthering-Waves/archives/624625"
+    }
+  ]
+}

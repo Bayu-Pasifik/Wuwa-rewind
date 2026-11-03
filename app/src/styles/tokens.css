@@ -1,0 +1,18 @@
+:root {
+  --paper: #EDEBE6;
+  --sheet: #F4F2ED;
+  --ink: #141414;
+  --muted: #6D6A63;
+  --cobalt: #1F3FB0;
+  --vermilion: #D2462A;
+  --ochre: #B88A2E;
+  --moss: #4E6B3A;
+  --card: #E6DFCF;
+  --rule: rgba(20, 20, 20, .9);
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --ease-sheet: cubic-bezier(.76, 0, .18, 1);
+  --H: min(46vh, 31vw);
+  --sans: "Inter Tight Variable", "Inter Tight", "Noto Sans JP", "Noto Sans SC", system-ui, sans-serif;
+  --serif: "Newsreader Variable", "Newsreader", Georgia, serif;
+}
+@media (max-width: 767px) { :root { --H: min(60vw, 40svh); } }
