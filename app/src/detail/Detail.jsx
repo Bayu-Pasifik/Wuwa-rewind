@@ -5,6 +5,8 @@ import { t, tj, loc, other } from '../i18n/index.js'
 import { ACCENT, coverInner, titleOf } from '../shelf/tape.js'
 import { hasBody } from '../reader/doc.js'
 
+const bodyAvail = (s, l) => (s.has_body_en !== undefined ? !!s[`has_body_${l}`] : hasBody(s.body?.[l]))
+
 const EASE = 'cubic-bezier(.2,.8,.2,1)'
 const SHEET_EASE = 'cubic-bezier(.76,0,.18,1)'
 const BLOBS = [
@@ -126,8 +128,8 @@ const Detail = forwardRef(function Detail({ story, lang, settings, categories, o
 
   let cta = { label: tj(lang, 'writeup_coming'), disabled: true, action: null }
   if (story) {
-    if (hasBody(story.body?.[lang])) cta = { label: tj(lang, 'read'), disabled: false, action: () => onRead(story, lang) }
-    else if (hasBody(story.body?.[other(lang)]))
+    if (bodyAvail(story, lang)) cta = { label: tj(lang, 'read'), disabled: false, action: () => onRead(story, lang) }
+    else if (bodyAvail(story, other(lang)))
       cta = { label: t(lang, 'read_other'), disabled: false, action: () => onRead(story, other(lang), true) }
   }
 

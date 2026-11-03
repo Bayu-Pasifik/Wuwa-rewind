@@ -7,6 +7,7 @@ import { LOCALES, t, tj, loc, JP } from '../i18n/index.js'
 import { createEngine } from './shelfEngine.js'
 import { captionTexts, swapCaption } from './caption.js'
 import { titleOf } from './tape.js'
+import { preloadAround } from './preload.js'
 import { setSeo } from '../seo.js'
 
 const PLACEHOLDER = { placeholder: true, slug: '', title: { en: 'NOTHING HERE YET', id: 'BELUM ADA' }, version: '', category: '' }
@@ -111,6 +112,7 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
       const { lang: lg, meta: mt } = R.current
       swapCaption(capRefs.current, captionTexts(story, lg, mt.categories), dir, reduced, lg)
       setGroup(story.version_group || '')
+      preloadAround(listRef.current, listRef.current.findIndex((s) => s.slug === story.slug))
       lastGroup = story.version_group
       setSeo(story, lg, story.placeholder ? 'Cranellz' : `${titleOf(story, lg)} — Cranellz`, story.synopsis?.[lg])
       if (!flags.current.detailOpen) {

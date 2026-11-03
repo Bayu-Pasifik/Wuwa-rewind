@@ -4,6 +4,10 @@ import { supabase } from './supabase.js'
 
 let cache
 
+// List payload leaves out `body`; has_body_* flags say whether a write-up exists and getBody() fetches it on demand.
+const LIST_COLS = 'id,slug,category,chapter_label,title,original_title,original_title_lang,romanised_title,version,version_group,region,characters,est_minutes,release_date,synopsis,sort_key,status,publish_at,source_url,has_body_en,has_body_id'
+const bodies = new Map()
+
 async function loadSeed() {
   const r = await fetch('/seed.json')
   if (!r.ok) throw new Error('seed.json ' + r.status)
@@ -20,7 +24,7 @@ async function loadRemote() {
     supabase.from('site_settings').select('*').eq('id', 1).maybeSingle(),
     supabase
       .from('stories')
-      .select('*, spine:media!stories_spine_media_id_fkey(*), cover:media!stories_cover_media_id_fkey(*)')
+      .select(`${LIST_COLS}, spine:media!stories_spine_media_id_fkey(*), cover:media!stories_cover_media_id_fkey(*)`)
       .order('sort_key'),
   ])
   const err = [cats, groups, vers, sets, stories].find((x) => x.error)?.error
@@ -46,9 +50,22 @@ async function load() {
         }
       }
       return loadSeed()
-    })()
+    })().then(synth)
   }
   return cache
+}
+
+// Dev-only perf harness: ?synth=500 clones the live stories up to N entries.
+function synth(d) {
+  const n = import.meta.env.DEV ? Number(new URLSearchParams(location.search).get('synth')) : 0
+  if (!n || n <= d.stories.length) return d
+  const base = d.stories.filter((s) => s.status === 'published')
+  const stories = []
+  for (let i = 0; i < n; i++) {
+    const s = base[i % base.length]
+    stories.push(i < base.length ? s : { ...s, slug: `${s.slug}-x${i}`, sort_key: s.sort_key + i * 0.001 })
+  }
+  return { ...d, stories }
 }
 
 export const invalidate = () => { cache = null }
@@ -68,6 +85,19 @@ export async function getMeta() {
 export async function listStories() {
   const d = await load()
   return d.stories.filter((s) => isLive(s)).sort((a, b) => a.sort_key - b.sort_key)
+}
+
+export async function getBody(slug) {
+  if (bodies.has(slug)) return bodies.get(slug)
+  let p
+  if (supabase) {
+    p = supabase.from('stories').select('body').eq('slug', slug).maybeSingle().then(({ data, error }) => { if (error) throw error; return data?.body || { en: null, id: null } })
+  } else {
+    p = getStory(slug).then((s) => s?.body || { en: null, id: null })
+  }
+  p = p.catch((e) => { bodies.delete(slug); throw e })
+  bodies.set(slug, p)
+  return p
 }
 
 export async function getStory(slug) {

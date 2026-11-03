@@ -153,3 +153,8 @@ create policy "public read media files" on storage.objects for select using (buc
 create policy "editors upload media files" on storage.objects for insert with check (bucket_id = 'media' and is_editor());
 create policy "editors update media files" on storage.objects for update using (bucket_id = 'media' and is_editor());
 create policy "editors delete media files" on storage.objects for delete using (bucket_id = 'media' and is_editor());
+
+-- ---------- list payload: body is loaded lazily, these flags tell the shelf if a write-up exists (T4.4) ----------
+alter table stories
+  add column if not exists has_body_en boolean generated always as (case when jsonb_typeof(body->'en'->'content') = 'array' then jsonb_array_length(body->'en'->'content') > 0 else false end) stored,
+  add column if not exists has_body_id boolean generated always as (case when jsonb_typeof(body->'id'->'content') = 'array' then jsonb_array_length(body->'id'->'content') > 0 else false end) stored;

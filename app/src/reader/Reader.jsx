@@ -1,8 +1,9 @@
-import React, { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useRef } from 'react'
+import React, { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { trapFocus } from '../useFocusTrap.js'
 import Logo from '../Logo.jsx'
 import { t, tj, loc, other, LOCALES } from '../i18n/index.js'
 import { blocksOf, hasBody, plain } from './doc.js'
+import { getBody } from '../api/stories.js'
 import { titleOf } from '../shelf/tape.js'
 import { fmtDate } from '../detail/Detail.jsx'
 
@@ -73,9 +74,19 @@ const Reader = forwardRef(function Reader({ story, lang, settings, stories, cate
   const anchor = useRef(null)
   const openRef = useRef(false)
 
-  const doc = story?.body?.[lang]
+  const [fetched, setFetched] = useState(null)
+  const slug = story?.slug
+  useEffect(() => {
+    setFetched(null)
+    if (!slug || story.body !== undefined) return
+    let on = true
+    getBody(slug).then((b) => on && setFetched(b)).catch(() => {})
+    return () => { on = false }
+  }, [slug]) // eslint-disable-line react-hooks/exhaustive-deps
+  const doc = (story?.body ?? fetched)?.[lang]
   const blocks = useMemo(() => blocksOf(doc), [doc])
-  const empty = !hasBody(doc)
+  const loading = !!story && story.body === undefined && fetched === null
+  const empty = !loading && !hasBody(doc)
 
   let partN = 0
   const parts = blocks.map((b) => (b.type === 'heading' ? ++partN : 0))
@@ -197,7 +208,7 @@ const Reader = forwardRef(function Reader({ story, lang, settings, stories, cate
               ))
             )}
           </div>
-          {!empty && <div className="r-fin lbl">{t(lang, 'end_of_story')}</div>}
+          {!empty && !loading && <div className="r-fin lbl">{t(lang, 'end_of_story')}</div>}
           <div className="r-end">
             <button disabled={!prev} onClick={() => prev && onNav(prev.slug)} aria-label={t(lang, 'prev_label')}>
               <span className="lbl">← {t(lang, 'prev_story')}</span>
