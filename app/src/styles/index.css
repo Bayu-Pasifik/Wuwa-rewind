@@ -197,3 +197,8 @@ button:disabled { cursor: default; }
 .r-fin { margin-top: 40px; color: var(--muted); text-align: center; }
 .dl > .chips { display: flex; }
 .r-head > :first-child { justify-self: start; }
+
+/* STYLE §11: reduced motion — CSS transitions/animations collapse to 1ms with no delay */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 1ms !important; transition-delay: 0s !important; animation-duration: 1ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
+}
