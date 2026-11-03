@@ -18,7 +18,7 @@ export function createEngine({ shelf, stage, cursor, play, reduced, onActive, on
     el.addEventListener('keydown', (e) => {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click() }
     })
-    el.innerHTML = '<div class="face sp"></div><div class="face cv"></div>'
+    el.innerHTML = '<div class="face sp" aria-hidden="true"></div><div class="face cv" aria-hidden="true"></div>'
     el.__v = null; el.__lift = 0; el.__hover = false; el.__key = ''
     el.addEventListener('pointerenter', () => { el.__hover = true })
     el.addEventListener('pointerleave', () => { el.__hover = false })

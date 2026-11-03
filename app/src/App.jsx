@@ -18,7 +18,7 @@ function Public() {
   }, [])
 
   if (error) return <div className="lbl" style={{ padding: 32 }}>Failed to load: {String(error.message || error)}</div>
-  if (!data) return null
+  if (!data) return <div id="boot"><span>Cranellz</span><small>STORY ARCHIVE / ARSIP CERITA</small></div>
   if (location.pathname.replace(/\/+$/, '') === '/about') return <About settings={data.settings} lang={lang} setLang={setLang} />
   return <Shelf {...data} lang={lang} setLang={setLang} />
 }

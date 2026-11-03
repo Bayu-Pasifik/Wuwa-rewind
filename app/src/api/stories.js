@@ -1,6 +1,14 @@
 // Data layer. Reads Supabase when configured and seeded; otherwise falls back to public/seed.json.
 // Callers (shelf, detail, reader) never know which source answered.
-import { supabase } from './supabase.js'
+// Public reads use plain PostgREST fetches so supabase-js stays out of the public bundle (it lives in the admin chunk).
+const SB_URL = import.meta.env.VITE_SUPABASE_URL
+const SB_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY
+const hasRemote = !!(SB_URL && SB_KEY)
+const rest = (path) =>
+  fetch(`${SB_URL}/rest/v1/${path}`, { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` } }).then((r) => {
+    if (!r.ok) throw new Error(`supabase ${r.status}`)
+    return r.json()
+  })
 
 let cache
 
@@ -17,15 +25,16 @@ async function loadSeed() {
 const mediaOf = (m) => (m ? { url: m.url, width: m.width, height: m.height, crop: m.crop, alt: m.alt } : null)
 
 async function loadRemote() {
+  // index.html starts these requests before the JS bundle arrives (window.__pre); same URLs, so a miss just refetches.
+  const pre = window.__pre
+  const use = (key, path, one) =>
+    (pre?.[key] || rest(path)).catch(() => rest(path)).then((d) => ({ data: one ? d[0] ?? null : d, error: null }))
   const [cats, groups, vers, sets, stories] = await Promise.all([
-    supabase.from('categories').select('*').order('sort'),
-    supabase.from('version_groups').select('*').order('sort'),
-    supabase.from('versions').select('*').order('release_date'),
-    supabase.from('site_settings').select('*').eq('id', 1).maybeSingle(),
-    supabase
-      .from('stories')
-      .select(`${LIST_COLS}, spine:media!stories_spine_media_id_fkey(*), cover:media!stories_cover_media_id_fkey(*)`)
-      .order('sort_key'),
+    use('cats', 'categories?select=*&order=sort.asc'),
+    use('groups', 'version_groups?select=*&order=sort.asc'),
+    use('vers', 'versions?select=*&order=release_date.asc'),
+    use('sets', 'site_settings?select=*&id=eq.1', true),
+    use('stories', `stories?select=${encodeURIComponent(LIST_COLS + ', spine:media!stories_spine_media_id_fkey(*), cover:media!stories_cover_media_id_fkey(*)')}&order=sort_key.asc`),
   ])
   const err = [cats, groups, vers, sets, stories].find((x) => x.error)?.error
   if (err) throw err
@@ -42,7 +51,7 @@ async function loadRemote() {
 async function load() {
   if (!cache) {
     cache = (async () => {
-      if (supabase) {
+      if (hasRemote) {
         try {
           return await loadRemote()
         } catch (e) {
@@ -90,8 +99,8 @@ export async function listStories() {
 export async function getBody(slug) {
   if (bodies.has(slug)) return bodies.get(slug)
   let p
-  if (supabase) {
-    p = supabase.from('stories').select('body').eq('slug', slug).maybeSingle().then(({ data, error }) => { if (error) throw error; return data?.body || { en: null, id: null } })
+  if (hasRemote) {
+    p = rest(`stories?select=body&slug=eq.${encodeURIComponent(slug)}`).then((d) => d[0]?.body || { en: null, id: null })
   } else {
     p = getStory(slug).then((s) => s?.body || { en: null, id: null })
   }

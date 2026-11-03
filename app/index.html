@@ -11,7 +11,12 @@
 <meta name="twitter:card" content="summary" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+<noscript><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet" /></noscript>
+<script>(function(){var u='%VITE_SUPABASE_URL%',k='%VITE_SUPABASE_ANON_KEY%';if(!u||!k||u.charAt(0)==='%'||k.charAt(0)==='%')return;var h={apikey:k,Authorization:'Bearer '+k};function g(p){return fetch(u+'/rest/v1/'+p,{headers:h}).then(function(r){if(!r.ok)throw r.status;return r.json()})}
+// keep in sync with src/api/stories.js loadRemote(); a mismatch only costs the speed-up, never correctness
+window.__pre={cats:g('categories?select=*&order=sort.asc'),groups:g('version_groups?select=*&order=sort.asc'),vers:g('versions?select=*&order=release_date.asc'),sets:g('site_settings?select=*&id=eq.1'),stories:g('stories?select='+encodeURIComponent('id,slug,category,chapter_label,title,original_title,original_title_lang,romanised_title,version,version_group,region,characters,est_minutes,release_date,synopsis,sort_key,status,publish_at,source_url,has_body_en,has_body_id, spine:media!stories_spine_media_id_fkey(*), cover:media!stories_cover_media_id_fkey(*)')+'&order=sort_key.asc')};Object.keys(window.__pre).forEach(function(x){window.__pre[x].catch(function(){})})})()</script>
+<style>html,body{margin:0;background:#EDEBE6}#boot{position:fixed;top:0;left:0;right:0;height:72px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#1F3FB0;font:400 24px/1 Georgia,serif}#boot small{font:500 9px/1 system-ui,sans-serif;letter-spacing:.14em}</style>
 </head>
-<body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body>
+<body><div id="root"><div id="boot"><span>Cranellz</span><small>STORY ARCHIVE / ARSIP CERITA</small></div></div><script type="module" src="/src/main.jsx"></script></body>
 </html>

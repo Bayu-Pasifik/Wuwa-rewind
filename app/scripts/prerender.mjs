@@ -53,7 +53,7 @@ function render(s, lang) {
     .replace(/<title>.*?<\/title>/, `<title>${esc(title)}</title>`)
     .replace(/<meta name="description"[^>]*>\s*/, '')
     .replace('</head>', head + '\n</head>')
-    .replace('<div id="root"></div>', `<div id="root"><article><h1>${esc(s.title[lang])}</h1><p>${esc(desc)}</p></article></div>`)
+    .replace(/<div id="root">[\s\S]*?<\/div><\/div>/, `<div id="root"><article><h1>${esc(s.title[lang])}</h1><p>${esc(desc)}</p></article></div>`)
 }
 
 let n = 0

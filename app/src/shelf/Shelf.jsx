@@ -315,9 +315,9 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
         ))}
       </nav>
 
-      <section className="shelf" aria-label={t(lang, 'shelf')} ref={shelfRef}>
+      <main className="shelf" aria-label={t(lang, 'shelf')} ref={shelfRef}>
         <div className="stage" ref={stageRef} />
-      </section>
+      </main>
 
       <button className="play" ref={playRef} aria-label={t(lang, 'open_label')} onClick={() => api.current.openDetail()}>
         <i />
