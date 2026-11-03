@@ -7,6 +7,7 @@ import { LOCALES, t, tj, loc, JP } from '../i18n/index.js'
 import { createEngine } from './shelfEngine.js'
 import { captionTexts, swapCaption } from './caption.js'
 import { titleOf } from './tape.js'
+import { setSeo } from '../seo.js'
 
 const PLACEHOLDER = { placeholder: true, slug: '', title: { en: 'NOTHING HERE YET', id: 'BELUM ADA' }, version: '', category: '' }
 const ROUTE = /^\/story\/([^/]+)(\/read)?\/?$/
@@ -111,7 +112,7 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
       swapCaption(capRefs.current, captionTexts(story, lg, mt.categories), dir, reduced, lg)
       setGroup(story.version_group || '')
       lastGroup = story.version_group
-      document.title = story.placeholder ? 'Cranellz' : `${titleOf(story, lg)} — Cranellz`
+      setSeo(story, lg, story.placeholder ? 'Cranellz' : `${titleOf(story, lg)} — Cranellz`, story.synopsis?.[lg])
       if (!flags.current.detailOpen) {
         clearTimeout(urlTimer)
         urlTimer = setTimeout(() => {
@@ -253,7 +254,7 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
     if (cur) {
       const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
       swapCaption(capRefs.current, captionTexts(cur, lang, meta.categories), 1, reduced, lang)
-      document.title = cur.placeholder ? 'Cranellz' : `${titleOf(cur, lang)} — Cranellz`
+      setSeo(cur, lang, cur.placeholder ? 'Cranellz' : `${titleOf(cur, lang)} — Cranellz`, cur.synopsis?.[lang])
     }
   }, [lang, meta])
 
