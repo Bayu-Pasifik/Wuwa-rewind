@@ -10,7 +10,7 @@ import { titleOf } from './tape.js'
 import { setSeo } from '../seo.js'
 
 const PLACEHOLDER = { placeholder: true, slug: '', title: { en: 'NOTHING HERE YET', id: 'BELUM ADA' }, version: '', category: '' }
-const ROUTE = /^\/story\/([^/]+)(\/read)?\/?$/
+const ROUTE = /^(?:\/id)?\/story\/([^/]+)(\/read)?\/?$/
 
 const parseRoute = () => {
   const m = location.pathname.match(ROUTE)

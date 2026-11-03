@@ -20,6 +20,7 @@ export function detectLocale(defaultLocale = 'en') {
   try {
     const q = new URLSearchParams(location.search).get('lang')
     if (LOCALES.includes(q)) return q
+    if (/^\/id(\/|$)/.test(location.pathname)) return 'id'
     const s = localStorage.getItem('cranellz.lang')
     if (LOCALES.includes(s)) return s
   } catch { /* storage blocked */ }

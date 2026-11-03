@@ -8,7 +8,7 @@ const set = (sel, make, attrs) => {
 export function setSeo(story, lang, title, description) {
   const base = location.origin
   const path = story && !story.placeholder ? `/story/${story.slug}` : '/'
-  const url = (l) => `${base}${path}?lang=${l}`
+  const url = (l) => base + (l === 'id' ? '/id' : '') + (path === '/' ? (l === 'id' ? '/' : '') : path)
   const desc = description || 'Unofficial fan archive of Wuthering Waves story content.'
   document.title = title
   set('meta[name="description"]', 'meta', { name: 'description', content: desc })
