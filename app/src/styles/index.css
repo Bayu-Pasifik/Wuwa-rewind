@@ -202,3 +202,6 @@ button:disabled { cursor: default; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition-duration: 1ms !important; transition-delay: 0s !important; animation-duration: 1ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
 }
+
+.tape:focus-visible { outline: none; }
+.tape:focus-visible .cv { outline: 2px solid var(--cobalt); outline-offset: -6px; }

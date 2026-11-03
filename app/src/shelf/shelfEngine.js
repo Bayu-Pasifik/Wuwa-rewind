@@ -13,6 +13,11 @@ export function createEngine({ shelf, stage, cursor, play, reduced, onActive, on
   for (let k = 0; k < POOL; k++) {
     const el = document.createElement('div')
     el.className = 'tape'
+    el.setAttribute('role', 'button')
+    el.tabIndex = -1
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click() }
+    })
     el.innerHTML = '<div class="face sp"></div><div class="face cv"></div>'
     el.__v = null; el.__lift = 0; el.__hover = false; el.__key = ''
     el.addEventListener('pointerenter', () => { el.__hover = true })
@@ -141,11 +146,15 @@ export function createEngine({ shelf, stage, cursor, play, reduced, onActive, on
       if (el.__key !== key) {
         el.__key = key
         fillTape(el, list[mod(v, N)], lang, geo)
+        el.setAttribute('aria-label', list[mod(v, N)]?.title?.[lang] || '')
       }
       const B = Math.abs(r) < 1 ? (r + Math.sin(Math.PI * r) / Math.PI) / 2 : Math.sign(r) * 0.5
       const x = x0 + (d - ws + 1.6 * gap) * B
       if (Math.abs(x) > W / 2 + 1.5 * d) { el.style.visibility = 'hidden'; continue }
       el.style.visibility = 'visible'
+      // roving tabindex: Tab lands on the active tape, arrows move it
+      const ti = Math.abs(r) < 0.5 ? 0 : -1
+      if (el.__ti !== ti) { el.__ti = ti; el.tabIndex = ti; if (ti) el.setAttribute('aria-current', 'true'); else el.removeAttribute('aria-current') }
       const target = el.__hover && Math.abs(r) > 0.5 && !S.blocked ? 1 : 0
       if (target) overSpine = true
       el.__lift += (target - el.__lift) * lk
