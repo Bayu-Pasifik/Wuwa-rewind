@@ -1,4 +1,5 @@
 import React, { forwardRef, useImperativeHandle, useRef } from 'react'
+import { trapFocus } from '../useFocusTrap.js'
 import Logo from '../Logo.jsx'
 import { t, tj, loc, other } from '../i18n/index.js'
 import { ACCENT, coverInner, titleOf } from '../shelf/tape.js'
@@ -20,6 +21,7 @@ export function fmtDate(iso, lang) {
 
 const Detail = forwardRef(function Detail({ story, lang, settings, categories, onClose, onRead }, ref) {
   const root = useRef(null)
+  const release = useRef(null)
   const blobs = useRef([])
   const raf = useRef(0)
   const reduced = useRef(false)
@@ -48,6 +50,7 @@ const Detail = forwardRef(function Detail({ story, lang, settings, categories, o
       const rm = instant || window.matchMedia('(prefers-reduced-motion: reduce)').matches
       reduced.current = rm
       stateRef.current.open = true
+      release.current?.(); release.current = trapFocus(el)
       el.getAnimations().forEach((a) => a.cancel())
       setR(() => 0)
       el.style.visibility = 'visible'
@@ -67,6 +70,7 @@ const Detail = forwardRef(function Detail({ story, lang, settings, categories, o
       const el = root.current
       const rm = instant || window.matchMedia('(prefers-reduced-motion: reduce)').matches
       stateRef.current.open = false
+      release.current?.(); release.current = null
       el.style.transformOrigin = `${rect.left + rect.width / 2}px ${rect.top + rect.height / 2}px`
       el.getAnimations().forEach((a) => a.cancel())
       const a = el.animate(

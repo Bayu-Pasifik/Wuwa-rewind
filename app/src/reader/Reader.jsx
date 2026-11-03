@@ -1,4 +1,5 @@
 import React, { forwardRef, useEffect, useImperativeHandle, useLayoutEffect, useMemo, useRef } from 'react'
+import { trapFocus } from '../useFocusTrap.js'
 import Logo from '../Logo.jsx'
 import { t, tj, loc, other, LOCALES } from '../i18n/index.js'
 import { blocksOf, hasBody, plain } from './doc.js'
@@ -67,6 +68,7 @@ function Block({ node, part }) {
 
 const Reader = forwardRef(function Reader({ story, lang, settings, stories, categories, onBack, onNav, setLang }, ref) {
   const root = useRef(null)
+  const release = useRef(null)
   const progress = useRef(null)
   const anchor = useRef(null)
   const openRef = useRef(false)
@@ -84,6 +86,7 @@ const Reader = forwardRef(function Reader({ story, lang, settings, stories, cate
       const el = root.current
       const rm = instant || window.matchMedia('(prefers-reduced-motion: reduce)').matches
       openRef.current = true
+      release.current?.(); release.current = trapFocus(el)
       el.scrollTop = 0
       el.getAnimations().forEach((a) => a.cancel())
       el.style.visibility = 'visible'
@@ -94,6 +97,7 @@ const Reader = forwardRef(function Reader({ story, lang, settings, stories, cate
       const el = root.current
       const rm = instant || window.matchMedia('(prefers-reduced-motion: reduce)').matches
       openRef.current = false
+      release.current?.(); release.current = null
       const a = el.animate([{ clipPath: 'inset(0% 0 0 0)' }, { clipPath: 'inset(100% 0 0 0)' }],
         { duration: rm ? 1 : 550, easing: SHEET_EASE, fill: 'both' })
       a.onfinish = () => {
