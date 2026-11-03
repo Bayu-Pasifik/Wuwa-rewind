@@ -339,6 +339,7 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
           <span className="tip" role="tooltip">{loc(settings?.disclaimer, lang)}</span>
         </span>
         <span>
+          <a href={`/about?lang=${lang}`}>{t(lang, 'about')}</a>{social.length > 0 && ' / '}
           {social.map((s, i) => (
             <React.Fragment key={s.url || i}>
               {i > 0 && ' / '}<a href={s.url} target="_blank" rel="noreferrer">{s.label}</a>

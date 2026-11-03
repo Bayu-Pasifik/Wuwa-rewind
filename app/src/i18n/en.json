@@ -28,5 +28,8 @@
   "earlier": "EARLIER",
   "end_of_story": "END OF WRITE-UP",
   "no_body": "No write-up in this language yet.",
-  "disclaimer_label": "Disclaimer"
+  "disclaimer_label": "Disclaimer",
+  "about": "ABOUT",
+  "about_title": "About",
+  "about_body": "Cranellz is a fan-made reading shelf for Wuthering Waves story summaries, written in English and Indonesian. It contains write-ups and summaries, not the original in-game text."
 }

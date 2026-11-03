@@ -2,6 +2,7 @@ import React, { lazy, Suspense, useEffect, useState } from 'react'
 import { getMeta, getSettings, listStories } from './api/stories.js'
 import { useLocale } from './i18n/index.js'
 import Shelf from './shelf/Shelf.jsx'
+import About from './About.jsx'
 
 const Admin = lazy(() => import('./admin/Admin.jsx'))
 
@@ -18,6 +19,7 @@ function Public() {
 
   if (error) return <div className="lbl" style={{ padding: 32 }}>Failed to load: {String(error.message || error)}</div>
   if (!data) return null
+  if (location.pathname.replace(/\/+$/, '') === '/about') return <About settings={data.settings} lang={lang} setLang={setLang} />
   return <Shelf {...data} lang={lang} setLang={setLang} />
 }
 
