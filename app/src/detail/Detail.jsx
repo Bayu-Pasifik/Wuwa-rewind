@@ -2,7 +2,7 @@ import React, { forwardRef, useImperativeHandle, useRef } from 'react'
 import { trapFocus } from '../useFocusTrap.js'
 import Logo from '../Logo.jsx'
 import { t, tj, loc, other } from '../i18n/index.js'
-import { ACCENT, coverInner, titleOf } from '../shelf/tape.js'
+import { ACCENT, coverInner, fullCoverUrl, titleOf } from '../shelf/tape.js'
 import { hasBody } from '../reader/doc.js'
 
 const bodyAvail = (s, l) => (s.has_body_en !== undefined ? !!s[`has_body_${l}`] : hasBody(s.body?.[l]))
@@ -134,7 +134,7 @@ const Detail = forwardRef(function Detail({ story, lang, settings, categories, o
   }
 
   const accent = story ? ACCENT[story.category] || 'var(--ink)' : 'var(--ink)'
-  const coverUrl = story && (typeof story.cover_media === 'string' ? story.cover_media : story.cover_media?.url)
+  const coverUrl = story && fullCoverUrl(story)
 
   return (
     <div className="detail" ref={root} role="dialog" aria-modal="true" aria-label={story ? titleOf(story, lang) : ''}>

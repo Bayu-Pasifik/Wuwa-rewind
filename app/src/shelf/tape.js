@@ -16,6 +16,15 @@ function mediaUrl(m) {
   return m && (typeof m === 'string' ? m : m.url) || null
 }
 
+/** Landscape cover media (e.g. quest scene art) goes inside the cover's picture block; portrait media is a full-bleed cover. */
+export function sceneUrl(story) {
+  const m = story.cover_media
+  return m && typeof m === 'object' && m.width && m.height && m.width >= m.height ? m.url : null
+}
+export function fullCoverUrl(story) {
+  return sceneUrl(story) ? null : mediaUrl(story.cover_media)
+}
+
 /**
  * Fill both faces of a pooled tape element for a story.
  * Art faces use the uploaded media; otherwise a generated typographic tape (STYLE §6).
@@ -30,7 +39,7 @@ export function fillTape(el, story, lang, geo) {
   const chap = esc(story.chapter_label || '')
 
   const spUrl = mediaUrl(story.spine_media)
-  const cvUrl = mediaUrl(story.cover_media)
+  const cvUrl = fullCoverUrl(story)
 
   if (spUrl) {
     sp.className = 'face sp art'
@@ -66,12 +75,13 @@ export function coverInner(story, lang, d) {
   const code = story.placeholder ? '—' : story.category
   const title = esc(titleOf(story, lang))
   const ver = story.placeholder ? '' : `${t(lang, 'ver')} ${esc(story.version)}`
+  const scene = sceneUrl(story)
   const tl = (titleOf(story, lang) || '').length
   const fs = Math.max(14, Math.min(d * 0.15, (d * 0.86) / (Math.max(10, tl) * 0.2)))
   return (
     `<div class="top lbl">A CRANELLZ ARCHIVE</div>` +
     `<div class="title" lang="${lang}" style="font-size:${fs.toFixed(1)}px">${title}</div>` +
-    `<div class="duo"><span class="code lbl">${esc(code)}</span></div>` +
+    `<div class="duo${scene ? ' pic' : ''}"${scene ? ` style="background-image:url(&quot;${esc(scene)}&quot;)"` : ''}><span class="code lbl">${esc(code)}</span></div>` +
     `<div class="row"><span class="lbl">${ver}</span><span class="vhs">VHS</span></div>`
   )
 }
