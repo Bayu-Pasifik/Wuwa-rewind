@@ -1,7 +1,5 @@
-import { coverInner, ACCENT } from './tape.js'
+import { fillTape } from './tape.js'
 import { captionTexts } from './caption.js'
-
-const mediaUrl = (m) => (m && (typeof m === 'string' ? m : m.url)) || null
 
 /**
  * Vertical zig-zag shelf: one real DOM row per story, covers alternate left/right while scrolling down.
@@ -12,7 +10,7 @@ export function createEngine({ shelf, stage, cursor, reduced, getCategories, onA
   let list = []
   let rows = []
   let lang = 'en'
-  const geo = { H: 300, d: 158, v: 0 }
+  const geo = { H: 300, ws: 50, d: 158, v: 0 }
   const S = { active: -1, sel: null, blocked: false, mx: 0, my: 0, cx: 0, cy: 0 }
 
   const measure = () => {
@@ -22,8 +20,10 @@ export function createEngine({ shelf, stage, cursor, reduced, getCategories, onA
     geo.H = probe.getBoundingClientRect().height
     probe.remove()
     geo.d = (geo.H * 474) / 900
+    geo.ws = (geo.H * 142) / 840
     geo.v++
     stage.style.setProperty('--d', geo.d + 'px')
+    stage.style.setProperty('--ws', geo.ws + 'px')
     rows.forEach((r) => { if (r.seen) fill(r) })
   }
 
@@ -32,24 +32,13 @@ export function createEngine({ shelf, stage, cursor, reduced, getCategories, onA
     if (r.key === key) return
     r.key = key
     const st = r.story
-    const cv = r.cv
-    const url = mediaUrl(st.cover_media)
-    if (url) {
-      cv.className = 'zcv cv art'
-      cv.style.backgroundImage = `url("${url}")`
-      cv.innerHTML = ''
-    } else {
-      cv.className = 'zcv gen cv'
-      cv.style.backgroundImage = ''
-      cv.style.setProperty('--accent', ACCENT[st.category] || 'var(--ink)')
-      cv.innerHTML = coverInner(st, lang, geo.d)
-    }
+    fillTape(r.cv, st, lang, geo)
     const [t1, t2, t3] = captionTexts(st, lang, getCategories())
     r.t1.textContent = t1
     r.t1.lang = lang
     r.t2.textContent = t2
     r.t3.textContent = t3
-    cv.setAttribute('aria-label', t1)
+    r.cv.setAttribute('aria-label', t1)
   }
 
   // ---------- observers ----------
@@ -99,17 +88,21 @@ export function createEngine({ shelf, stage, cursor, reduced, getCategories, onA
     rows = list.map((story, i) => {
       const el = document.createElement('article')
       el.className = 'zrow ' + (i % 2 ? 'even' : 'odd') + (reduced ? ' in' : '')
+      const wrap = document.createElement('div')
+      wrap.className = 'zwrap'
       const cv = document.createElement('div')
-      cv.className = 'zcv'
+      cv.className = 'ztape'
       cv.setAttribute('role', 'button')
       cv.tabIndex = -1
+      cv.innerHTML = '<div class="face sp" aria-hidden="true"></div><div class="face cv" aria-hidden="true"></div>'
+      wrap.append(cv)
       const tx = document.createElement('div')
       tx.className = 'ztxt'
       const t1 = document.createElement('h2'); t1.className = 'zt'
       const t2 = document.createElement('div'); t2.className = 'zs lbl'
       const t3 = document.createElement('div'); t3.className = 'zm'
       tx.append(t1, t2, t3)
-      el.append(cv, tx)
+      el.append(wrap, tx)
       const r = { el, cv, t1, t2, t3, story, i, key: '', seen: false }
       el.__row = r
       if (!story.placeholder) {
@@ -117,7 +110,18 @@ export function createEngine({ shelf, stage, cursor, reduced, getCategories, onA
         tx.addEventListener('click', () => open(r))
         cv.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(r) } })
         cv.addEventListener('pointerenter', () => { if (!S.blocked) cursor.classList.add('open') })
-        cv.addEventListener('pointerleave', () => cursor.classList.remove('open'))
+        cv.addEventListener('pointermove', (ev) => {
+          if (S.blocked || reduced || ev.pointerType === 'touch') return
+          const b = wrap.getBoundingClientRect()
+          const px = (ev.clientX - b.left) / b.width - 0.5
+          const py = (ev.clientY - b.top) / b.height - 0.5
+          cv.style.setProperty('--ry', (px * 26).toFixed(1) + 'deg')
+          cv.style.setProperty('--rx', (-py * 16).toFixed(1) + 'deg')
+        })
+        cv.addEventListener('pointerleave', () => {
+          cursor.classList.remove('open')
+          cv.style.removeProperty('--ry'); cv.style.removeProperty('--rx')
+        })
         tx.addEventListener('pointerenter', () => { if (!S.blocked) cursor.classList.add('open') })
         tx.addEventListener('pointerleave', () => cursor.classList.remove('open'))
       } else {
@@ -160,7 +164,7 @@ export function createEngine({ shelf, stage, cursor, reduced, getCategories, onA
 
   const coverRect = () => {
     const r = rows[S.sel ?? S.active] || rows[0]
-    return r.cv.getBoundingClientRect()
+    return r.cv.lastChild.getBoundingClientRect()
   }
 
   // ---------- cursor (rAF only while it is still catching up) ----------
