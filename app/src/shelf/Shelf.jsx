@@ -4,8 +4,7 @@ import Logo from '../Logo.jsx'
 import Detail from '../detail/Detail.jsx'
 import Reader from '../reader/Reader.jsx'
 import { LOCALES, t, tj, loc, JP } from '../i18n/index.js'
-import { createEngine } from './shelfEngine.js'
-import { captionTexts, swapCaption } from './caption.js'
+import { createEngine } from './zigzagEngine.js'
 import { titleOf } from './tape.js'
 import { preloadAround } from './preload.js'
 import { setSeo } from '../seo.js'
@@ -27,8 +26,6 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
   const shelfRef = useRef(null)
   const stageRef = useRef(null)
   const cursorRef = useRef(null)
-  const playRef = useRef(null)
-  const capRefs = useRef([null, null, null])
   const tabsRef = useRef(null)
   const indRef = useRef(null)
   const detailRef = useRef(null)
@@ -109,8 +106,7 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
     }
 
     const onActive = (story, dir, i, first) => {
-      const { lang: lg, meta: mt } = R.current
-      swapCaption(capRefs.current, captionTexts(story, lg, mt.categories), dir, reduced, lg)
+      const { lang: lg } = R.current
       setGroup(story.version_group || '')
       preloadAround(listRef.current, listRef.current.findIndex((s) => s.slug === story.slug))
       lastGroup = story.version_group
@@ -212,8 +208,8 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
     }
 
     engine.current = createEngine({
-      shelf: shelfRef.current, stage: stageRef.current, cursor: cursorRef.current, play: playRef.current,
-      reduced, onActive, onOpen: (story) => openDetail(story),
+      shelf: shelfRef.current, stage: stageRef.current, cursor: cursorRef.current,
+      reduced, getCategories: () => R.current.meta.categories, onActive, onOpen: (story) => openDetail(story),
     })
     engine.current.setLang(R.current.lang)
 
@@ -254,8 +250,6 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
     e.setLang(lang)
     const cur = e.current()
     if (cur) {
-      const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-      swapCaption(capRefs.current, captionTexts(cur, lang, meta.categories), 1, reduced, lang)
       setSeo(cur, lang, cur.placeholder ? 'Cranellz' : `${titleOf(cur, lang)} — Cranellz`, cur.synopsis?.[lang])
     }
   }, [lang, meta])
@@ -318,23 +312,6 @@ export default function Shelf({ stories, meta, settings, lang, setLang }) {
       <main className="shelf" aria-label={t(lang, 'shelf')} ref={shelfRef}>
         <div className="stage" ref={stageRef} />
       </main>
-
-      <button className="play" ref={playRef} aria-label={t(lang, 'open_label')} onClick={() => api.current.openDetail()}>
-        <i />
-      </button>
-
-      <div className="caption" aria-live="polite">
-        <div className="mask m-title" ref={(el) => (capRefs.current[0] = el)} />
-        <div className="mask lbl m-sub" ref={(el) => (capRefs.current[1] = el)} />
-        <div className="mask m-meta" ref={(el) => (capRefs.current[2] = el)} />
-      </div>
-
-      <button className="arrow l" aria-label={t(lang, 'prev_label')} onClick={() => engine.current?.step(-1)}>
-        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M5 1 L1 5 L5 9 M1 5 H17" /></svg>
-      </button>
-      <button className="arrow r" aria-label={t(lang, 'next_label')} onClick={() => engine.current?.step(1)}>
-        <svg width="18" height="10" viewBox="0 0 18 10" fill="none" stroke="currentColor" strokeWidth="1.2"><path d="M13 1 L17 5 L13 9 M17 5 H1" /></svg>
-      </button>
 
       <footer className="foot-bar lbl">
         <span className="disc">
